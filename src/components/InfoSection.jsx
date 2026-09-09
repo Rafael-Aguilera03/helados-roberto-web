@@ -170,9 +170,9 @@ export default function InfoSection() {
 
               <div className="space-y-2 mt-4">
                 <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
-                  <span className="text-xs font-semibold text-slate-700">Lunes a Lunes (Todos los días)</span>
+                  <span className="text-xs font-semibold text-slate-700">Todos los días de la semana</span>
                   <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
-                    09:00 — 23:00 hs
+                    08:00 — 23:00 hs
                   </span>
                 </div>
               </div>

@@ -1,18 +1,23 @@
 import { useState, useEffect } from 'react';
 
+// Función para calcular el estado en el instante exacto del montaje
+const getInitialOpenState = () => {
+  const now = new Date();
+  const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
+  // Abierto de Lunes a Lunes de 09:00 a 23:00 hs
+  return currentDecimalHour >= 9 && currentDecimalHour < 23;
+};
+
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  // Inicialización sincrónica: elimina el flash de "Cerrado" al cargar
+  const [isOpen, setIsOpen] = useState(getInitialOpenState);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const checkSchedule = () => {
-      const now = new Date();
-      const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
-      // Abierto de Lunes a Lunes de 09:00 a 23:00 hs
-      setIsOpen(currentDecimalHour >= 9 && currentDecimalHour < 23);
+      setIsOpen(getInitialOpenState());
     };
 
-    checkSchedule();
     const interval = setInterval(checkSchedule, 60000);
     return () => clearInterval(interval);
   }, []);
@@ -55,16 +60,21 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Badge de estado automático */}
-          <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200">
-            <span className="relative flex h-2 w-2">
-              {isOpen && (
+          {/* Badge de estado unificado con los colores de InfoSection */}
+          {isOpen ? (
+            <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 shadow-xs">
+              <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              )}
-              <span className={`relative inline-flex rounded-full h-2 w-2 ${isOpen ? 'bg-emerald-400' : 'bg-rose-500'}`} />
-            </span>
-            <span>{isOpen ? 'Tomando pedidos' : 'Cerrado'}</span>
-          </div>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              </span>
+              <span>Tomando pedidos</span>
+            </div>
+          ) : (
+            <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 shadow-xs">
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
+              <span>Cerrado</span>
+            </div>
+          )}
 
           {/* Botón hamburguesa mobile */}
           <button
@@ -92,15 +102,20 @@ export default function Header() {
       {/* Menú mobile desplegable */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-slate-900 border-b border-slate-800 px-4 py-4 flex flex-col gap-2 shadow-xl">
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200 mb-2">
-            <span className="relative flex h-2 w-2">
-              {isOpen && (
+          {isOpen ? (
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-2">
+              <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              )}
-              <span className={`relative inline-flex rounded-full h-2 w-2 ${isOpen ? 'bg-emerald-400' : 'bg-rose-500'}`} />
-            </span>
-            <span>{isOpen ? 'Abierto • Tomando pedidos' : 'Cerrado • Abre 09:00 hs'}</span>
-          </div>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              </span>
+              <span>Abierto • Tomando pedidos</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 mb-2">
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
+              <span>Cerrado • Abre 09:00 hs</span>
+            </div>
+          )}
           
           <a
             href="#catalogo"
