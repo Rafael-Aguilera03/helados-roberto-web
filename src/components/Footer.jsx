@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div>
               <span className="text-sm font-black text-slate-100 tracking-tight block">
-                Roberto Helados
+                Helados Roberto
               </span>
               <span className="text-xs text-slate-400">
                 Distribuidora de productos envasados sellados de fábrica
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Legales */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
           <p>
-            © {currentYear} Roberto Helados. Todos los derechos reservados.
+            © {currentYear} Helados Roberto. Todos los derechos reservados.
           </p>
           <p className="text-slate-400">
             Precios y stock sujetos a disponibilidad de fábrica.

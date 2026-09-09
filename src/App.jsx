@@ -48,7 +48,8 @@ export default function App() {
       </div>
 
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16" id="catalogo">
-        <div className="flex flex-col items-center gap-5 mb-8">
+        {/* Separación con borde y espaciado consistente */}
+        <div className="pt-10 border-t border-slate-200 flex flex-col items-center gap-5 mb-8">
           <ModeSwitch mode={mode} setMode={handleModeChange} />
           <CategoryTabs 
             categories={availableCategories} 

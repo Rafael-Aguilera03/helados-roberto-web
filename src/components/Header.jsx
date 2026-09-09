@@ -22,10 +22,10 @@ export default function Header({ isOpen = true }) {
           </div>
           <div>
             <span className="text-base font-black tracking-tight leading-none block text-white">
-              Roberto Helados
+              Helados Roberto
             </span>
             <span className="text-[11px] font-semibold text-sky-300 uppercase tracking-wider block mt-0.5">
-              Distribuidora de Envasados
+              Distribuidora de Helados
             </span>
           </div>
         </a>
