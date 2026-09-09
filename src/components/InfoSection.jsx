@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
-// Función para calcular el estado en el instante exacto del montaje (09:00 a 23:00 hs)
+// Función para calcular el estado en el instante exacto del montaje (08:00 a 23:00 hs)
 const getInitialOpenState = () => {
   const now = new Date();
   const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
-  return currentDecimalHour >= 9 && currentDecimalHour < 23;
+  return currentDecimalHour >= 8 && currentDecimalHour < 23;
 };
 
 function InfoCardReveal({ children, delay = "0ms" }) {
@@ -110,7 +110,7 @@ export default function InfoSection() {
                 </a>
               </div>
 
-              {/* Iframe con la nueva URL exacta */}
+              {/* Iframe con coordenadas precisas */}
               <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative bg-slate-100">
                 <iframe
                   title="Ubicación Roberto Helados"
@@ -143,7 +143,7 @@ export default function InfoSection() {
           </div>
         </InfoCardReveal>
 
-        {/* TARJETA 2: Horarios */}
+        {/* TARJETA 2: Horarios (Pedidos vs Entregas con estilos unificados) */}
         <InfoCardReveal delay="100ms">
           <div className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col justify-between h-full">
             <div>
@@ -157,14 +157,14 @@ export default function InfoSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-slate-900">Horarios de atención</h4>
-                    <p className="text-xs text-slate-500">Respuesta rápida de pedidos</p>
+                    <p className="text-xs text-slate-500">Pedidos y franjas de entrega</p>
                   </div>
                 </div>
 
                 {isOpen ? (
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    Abierto
+                    Tomando pedidos
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">
@@ -174,18 +174,39 @@ export default function InfoSection() {
                 )}
               </div>
 
-              <div className="space-y-2 mt-4">
+              {/* Sub-tarjetas con el estilo coherente del sistema */}
+              <div className="space-y-2.5 mt-4">
+                {/* 1. Recepción de pedidos */}
                 <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
-                  <span className="text-xs font-semibold text-slate-700">Todos los días</span>
-                  <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
+                  <div>
+                    <span className="text-xs font-bold text-slate-900 block">Tomando pedidos</span>
+                    <span className="text-[11px] text-slate-500">Lunes a Lunes (Todos los días)</span>
+                  </div>
+                  <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs shrink-0">
                     08:00 — 23:00 hs
                   </span>
+                </div>
+
+                {/* 2. Franjas de entrega */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100 gap-2">
+                  <div>
+                    <span className="text-xs font-bold text-slate-900 block">Entregas y repartos</span>
+                    <span className="text-[11px] text-slate-500">Turno mañana y turno tarde</span>
+                  </div>
+                  <div className="flex flex-wrap sm:flex-col items-start sm:items-end gap-1 shrink-0">
+                    <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
+                      08:00 — 12:00 hs
+                    </span>
+                    <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
+                      18:00 — 22:00 hs
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <p className="text-[11px] text-slate-600 mt-4 leading-relaxed">
-              Para pedidos mayoristas recomendamos encargar con anticipación.
+            <p className="text-[11px] text-slate-500 mt-4 leading-relaxed">
+              Los pedidos fuera de la franja de despacho se programan para el siguiente turno disponible.
             </p>
           </div>
         </InfoCardReveal>
@@ -269,11 +290,6 @@ export default function InfoSection() {
               <p className="text-xs text-slate-600 leading-relaxed">
                 Todos los productos salen directamente del freezer a temperatura controlada. Los envíos se realizan en conservadoras para evitar descongelamiento y asegurar que mantenga la consistencia durante el viaje.
               </p>
-            </div>
-
-            <div className="mt-4 p-3 bg-sky-50 rounded-2xl border border-sky-100 flex items-center gap-2">
-              <span className="text-sky-900 font-bold text-xs">Garantía:</span>
-              <span className="text-xs text-slate-700">Productos sellados.</span>
             </div>
           </div>
         </InfoCardReveal>

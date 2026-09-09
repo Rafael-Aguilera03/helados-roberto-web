@@ -5,7 +5,7 @@ const getInitialOpenState = () => {
   const now = new Date();
   const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
   // Abierto de Lunes a Lunes de 09:00 a 23:00 hs
-  return currentDecimalHour >= 9 && currentDecimalHour < 23;
+  return currentDecimalHour >= 8 && currentDecimalHour < 23;
 };
 
 export default function Header() {
@@ -113,7 +113,7 @@ export default function Header() {
           ) : (
             <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 mb-2">
               <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
-              <span>Cerrado • Abre 09:00 hs</span>
+              <span>Cerrado • Abre 08:00 hs</span>
             </div>
           )}
           
