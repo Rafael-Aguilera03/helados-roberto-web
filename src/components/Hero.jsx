@@ -15,7 +15,7 @@ export default function Hero() {
       </h2>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
-        Línea familiar y baldes gastronómicos de alta densidad. Conservados a temperatura óptima para conservar cremosidad pura.
+        Distribución independiente con años de experiencia abasteciendo a familias y comercios locales. Revisá nuestros productos abajo ↓
       </p>
     </section>
   );
