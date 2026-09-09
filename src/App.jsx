@@ -17,10 +17,16 @@ export default function App() {
   const whatsappNumber = "5492617035400";
 
   const categoryLabels = {
-    'potes-familiares': 'Potes Familiares',
-    'postres-envasados': 'Postres y Bombones',
-    'baldes-mayoristas': 'Baldes Gastronómicos',
-    'packs-cerrados': 'Packs e Insumos',
+    'potes': 'Potes',
+    'palitos': 'Palitos',
+    'postres': 'Postres',
+    'alfajores': 'Alfajores',
+    'baldes': 'Baldes',
+    // Compatibilidad por si todavía tenés nombres anteriores en data:
+    'potes-familiares': 'Potes',
+    'postres-envasados': 'Postres',
+    'baldes-mayoristas': 'Baldes',
+    'packs-cerrados': 'Baldes e Insumos',
   };
 
   const modeProducts = products.filter((p) => p.mode === mode);
