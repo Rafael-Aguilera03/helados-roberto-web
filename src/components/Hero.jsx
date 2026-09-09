@@ -10,7 +10,7 @@ export default function Hero() {
       </div>
 
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-5">
-        Venta y distribución de helados envasados, <br className="hidden sm:inline" />
+        Venta y distribución de helados Lomoro, <br className="hidden sm:inline" />
         <span className="text-sky-700">calidad y precio garantizado.</span>
       </h2>
 

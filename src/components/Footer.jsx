@@ -24,7 +24,7 @@ export default function Footer() {
                 Helados Roberto
               </span>
               <span className="text-xs text-slate-400">
-                Distribuidora de productos envasados sellados de fábrica
+                Distribuidora de helados Lomoro
               </span>
             </div>
           </div>

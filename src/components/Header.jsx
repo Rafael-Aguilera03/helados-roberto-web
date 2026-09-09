@@ -44,7 +44,7 @@ export default function Header() {
               Helados Roberto
             </span>
             <span className="text-[11px] font-semibold text-sky-300 uppercase tracking-wider block mt-0.5">
-              Distribuidora de Helados
+              Distribuidora de Helados Lomoro
             </span>
           </div>
         </a>

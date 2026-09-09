@@ -14,7 +14,7 @@ export const products = [
     unit: 'x unidad (60 gr)',
     flavors: 'Frutilla, Naranja, Limón',
     description: 'Palito de agua refrescante elaborado con fruta.',
-    image: '/img/palito-agua.png',
+    image: '/public/products/palitos de agua.png',
     badge: 'MÁS VENDIDO'
   },
   {
@@ -26,7 +26,7 @@ export const products = [
     unit: 'x unidad (60 gr)',
     flavors: 'Surtido frutal enriquecido',
     description: 'Palito frutal infantil adicionado con Vitamina C.',
-    image: '/img/palito-agua.png'
+    image: '/public/products/fortachon.png',
   },
   {
     id: 'menor-palito-bana-bana',
@@ -37,7 +37,7 @@ export const products = [
     unit: 'x unidad (45 gr)',
     flavors: 'Crema saborizada',
     description: 'Clásico palito infantil cremoso.',
-    image: '/img/palito-crema.png'
+    image: '/public/products/bana bana.png',
   },
   {
     id: 'menor-palito-crema',
@@ -70,7 +70,7 @@ export const products = [
     unit: 'x unidad (45 gr)',
     flavors: 'Crema con carita divertida',
     description: 'Palito temático con carita modelada para chicos.',
-    image: '/img/palito-crema.png'
+    image: '/public/products/carita tiki.png'
   },
   {
     id: 'menor-bombon-frutal',
@@ -92,7 +92,7 @@ export const products = [
     unit: 'x unidad (50 gr)',
     flavors: 'Crema Americana con Chocolate',
     description: 'Clásico palito de crema americana bañado en chocolate semiamargo.',
-    image: '/img/bombon-helado.png',
+    image: '/public/products/bombon clasico.png',
     badge: 'CLÁSICO'
   },
   {
