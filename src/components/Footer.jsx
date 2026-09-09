@@ -48,12 +48,25 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Derechos y vigencia */}
+        {/* Derechos, crédito de desarrollo y condiciones */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <p>
             © {currentYear} Helados Roberto. Todos los derechos reservados.
           </p>
-          <p>
+
+          <p className="text-slate-400">
+            Desarrollo web por{' '}
+            <a 
+              href="https://github.com/Rafael-Aguilera03" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sky-400 hover:text-sky-300 font-semibold transition-colors underline decoration-sky-500/30 underline-offset-2"
+            >
+              Rafael Aguilera
+            </a>
+          </p>
+
+          <p className="text-slate-500">
             Precios y stock sujetos a disponibilidad.
           </p>
         </div>
