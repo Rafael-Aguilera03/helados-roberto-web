@@ -15,7 +15,7 @@ export default function ProductCard({ product, index = 0 }) {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.1, rootMargin: '0px 0px -20px 0px' }
+      { threshold: 0.05, rootMargin: '0px 0px -10px 0px' }
     );
 
     observer.observe(node);
@@ -28,10 +28,13 @@ export default function ProductCard({ product, index = 0 }) {
     maximumFractionDigits: 0,
   }).format(product.price);
 
+// Un escalonado suave por fila con tope de 180ms
+const staggeredDelay = `${(index % 3) * 80}ms`;
+
   return (
     <article
       ref={cardRef}
-      style={{ transitionDelay: `${index * 60}ms` }}
+      style={{ transitionDelay: staggeredDelay }}
       className="product-card-reveal bg-white rounded-3xl p-5 border border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:shadow-md hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group"
     >
       <div>
@@ -65,9 +68,15 @@ export default function ProductCard({ product, index = 0 }) {
           {product.name}
         </h3>
 
-        {product.combination && (
+        {product.unit && (
           <p className="text-xs font-semibold text-sky-700 mt-1">
-            {product.combination}
+            {product.unit}
+          </p>
+        )}
+
+        {product.flavors && (
+          <p className="text-xs text-slate-500 mt-1">
+            {product.flavors}
           </p>
         )}
 
