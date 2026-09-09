@@ -1,7 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function Header({ isOpen = true }) {
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const checkSchedule = () => {
+      const now = new Date();
+      const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
+      // Abierto de Lunes a Lunes de 09:00 a 23:00 hs
+      setIsOpen(currentDecimalHour >= 9 && currentDecimalHour < 23);
+    };
+
+    checkSchedule();
+    const interval = setInterval(checkSchedule, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white transition-all">
@@ -41,7 +55,7 @@ export default function Header({ isOpen = true }) {
             </a>
           </nav>
 
-          {/* Badge de estado */}
+          {/* Badge de estado automático */}
           <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200">
             <span className="relative flex h-2 w-2">
               {isOpen && (
@@ -56,7 +70,7 @@ export default function Header({ isOpen = true }) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-xl text-slate-300 hover:bg-slate-800 active:bg-slate-700 transition-colors focus:outline-none"
+            className="md:hidden p-2 rounded-xl text-slate-300 hover:bg-slate-800 active:bg-slate-700 transition-colors focus:outline-none cursor-pointer"
             aria-label="Menú principal"
           >
             {mobileMenuOpen ? (
@@ -79,8 +93,13 @@ export default function Header({ isOpen = true }) {
       {mobileMenuOpen && (
         <div className="md:hidden bg-slate-900 border-b border-slate-800 px-4 py-4 flex flex-col gap-2 shadow-xl">
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200 mb-2">
-            <span className={`w-2 h-2 rounded-full ${isOpen ? 'bg-emerald-400' : 'bg-rose-500'}`} />
-            <span>{isOpen ? 'Abierto • Tomando pedidos' : 'Cerrado temporalmente'}</span>
+            <span className="relative flex h-2 w-2">
+              {isOpen && (
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              )}
+              <span className={`relative inline-flex rounded-full h-2 w-2 ${isOpen ? 'bg-emerald-400' : 'bg-rose-500'}`} />
+            </span>
+            <span>{isOpen ? 'Abierto • Tomando pedidos' : 'Cerrado • Abre 09:00 hs'}</span>
           </div>
           
           <a

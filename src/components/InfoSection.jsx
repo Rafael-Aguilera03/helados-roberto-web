@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function InfoCardReveal({ children, delay = "0ms" }) {
   const ref = useRef(null);
@@ -29,11 +29,25 @@ function InfoCardReveal({ children, delay = "0ms" }) {
 }
 
 export default function InfoSection() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const checkSchedule = () => {
+      const now = new Date();
+      const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
+      setIsOpen(currentDecimalHour >= 9 && currentDecimalHour < 23);
+    };
+
+    checkSchedule();
+    const interval = setInterval(checkSchedule, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="informacion" className="mt-20 pt-12 border-t border-slate-200">
       <div className="text-center max-w-2xl mx-auto mb-10 px-4">
         
-        {/* Badge con icono de reparto/logistica */}
+        {/* Badge superior */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100 border border-sky-200 text-sky-900 text-xs font-bold tracking-wide mb-3 shadow-xs">
           <svg 
             className="w-3.5 h-3.5 text-sky-700 stroke-current fill-none stroke-[2] shrink-0" 
@@ -60,33 +74,59 @@ export default function InfoSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
-        {/* TARJETA 1: Ubicación & Mapa Real */}
+        {/* TARJETA 1: Ubicación & Mapa con botón de apertura nativa */}
         <InfoCardReveal delay="0ms">
           <div className="bg-white rounded-3xl p-5 border border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col justify-between h-full">
             <div>
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-800 shrink-0">
-                  <svg className="w-5 h-5 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-800 shrink-0">
+                    <svg className="w-5 h-5 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm text-slate-900">Punto de ubicación y distribución</h4>
+                    <p className="text-xs text-slate-500">Retiros coordinados previamente por WhatsApp</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-sm text-slate-900">Punto de ubicación y distribución</h4>
-                  <p className="text-xs text-slate-500">Retiros coordinados previamente por WhatsApp</p>
-                </div>
+
+                {/* Enlace para abrir Google Maps en la app del teléfono */}
+                <a
+                  href="https://maps.google.com/?q=-32.978364,-68.774459"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors"
+                >
+                  <span>Abrir ubicación en Maps</span>
+                  <svg className="w-3.5 h-3.5 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                </a>
               </div>
 
-              {/* Iframe con ubicación real */}
+              {/* Iframe oficial */}
               <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative bg-slate-100">
                 <iframe
                   title="Ubicación Roberto Helados"
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d836.7399015553531!2d-68.77453773045927!3d-32.97846749834876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU4JzQyLjUiUyA2OMKwNDYnMjYuMCJX!5e0!3m2!1ses!2sar!4v1788926683368!5m2!1ses!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d836.740882235697!2d-68.77445930550235!3d-32.97836400790596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU4JzQyLjUiUyA2OMKwNDYnMjYuMCJX!5e0!3m2!1ses!2sus!4v1788929264469!5m2!1ses!2sus"
                   className="w-full h-full border-0"
                   loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
+                  referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
                 />
+              </div>
+
+              {/* Botón táctil visible en celular */}
+              <div className="mt-3 sm:hidden">
+                <a
+                  href="https://maps.google.com/?q=-32.978364,-68.774459"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-slate-100 active:bg-slate-200 text-slate-700 text-xs font-bold transition-colors"
+                >
+                  <svg className="w-4 h-4 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  <span>Abrir ubicación en Google Maps</span>
+                </a>
               </div>
             </div>
 
@@ -114,23 +154,25 @@ export default function InfoSection() {
                     <p className="text-xs text-slate-500">Respuesta rápida de pedidos</p>
                   </div>
                 </div>
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Abierto
-                </span>
+
+                {isOpen ? (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    Abierto
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                    Cerrado
+                  </span>
+                )}
               </div>
 
               <div className="space-y-2 mt-4">
                 <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
-                  <span className="text-xs font-semibold text-slate-700">Lunes a Sábados</span>
+                  <span className="text-xs font-semibold text-slate-700">Lunes a Lunes (Todos los días)</span>
                   <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
-                    10:00 — 21:00 hs
-                  </span>
-                </div>
-                <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
-                  <span className="text-xs font-semibold text-slate-700">Domingos y Feriados</span>
-                  <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
-                    12:00 — 20:00 hs
+                    09:00 — 23:00 hs
                   </span>
                 </div>
               </div>

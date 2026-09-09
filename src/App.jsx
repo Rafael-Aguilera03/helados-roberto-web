@@ -22,7 +22,7 @@ export default function App() {
     'postres': 'Postres',
     'alfajores': 'Alfajores',
     'baldes': 'Baldes',
-    // Compatibilidad por si todavía tenés nombres anteriores en data:
+    // Compatibilidad retroactiva con categorías previas:
     'potes-familiares': 'Potes',
     'postres-envasados': 'Postres',
     'baldes-mayoristas': 'Baldes',
@@ -47,14 +47,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col antialiased selection:bg-sky-200 selection:text-sky-900">
-      <Header isOpen={true} />
+      {/* Header calcula el estado automáticamente por horario (09:00 a 23:00 hs) */}
+      <Header />
 
       <div className="animate-hero">
         <Hero />
       </div>
 
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16" id="catalogo">
-        {/* Separación con borde y espaciado consistente */}
+      {/* pb-28 en mobile asegura que el botón flotante no tape precios ni descripciones */}
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-28 sm:pb-20" id="catalogo">
         <div className="pt-10 border-t border-slate-200 flex flex-col items-center gap-5 mb-8">
           <ModeSwitch mode={mode} setMode={handleModeChange} />
           <CategoryTabs 
