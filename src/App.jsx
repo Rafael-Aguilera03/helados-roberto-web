@@ -14,7 +14,7 @@ export default function App() {
   const [mode, setMode] = useState('menor');
   const [selectedCategory, setSelectedCategory] = useState('todas');
 
-  const whatsappNumber = "5492610000000";
+  const whatsappNumber = "5492617035400";
 
   const categoryLabels = {
     'potes-familiares': 'Potes Familiares',
