@@ -41,13 +41,20 @@ export default function Footer() {
 
         </div>
 
-        {/* Legales */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+        {/* Disclaimer de marcas */}
+        <div className="pt-6 pb-4 border-b border-slate-900">
+          <p className="text-[11px] leading-relaxed text-slate-500 text-center sm:text-left">
+            <span className="font-semibold text-slate-400">Aviso legal:</span> Helados Roberto es una distribuidora y punto de reventa independiente. Todas las marcas registradas, logotipos, nombres comerciales y packagings exhibidos (incluyendo Lomoro®) pertenecen a sus respectivos fabricantes y titulares, y se muestran en este catálogo exclusivamente con fines descriptivos e informativos sobre los productos comercializados.
+          </p>
+        </div>
+
+        {/* Derechos y vigencia */}
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <p>
             © {currentYear} Helados Roberto. Todos los derechos reservados.
           </p>
-          <p className="text-slate-400">
-            Precios y stock sujetos a disponibilidad de fábrica.
+          <p>
+            Precios y stock sujetos a disponibilidad.
           </p>
         </div>
       </div>
