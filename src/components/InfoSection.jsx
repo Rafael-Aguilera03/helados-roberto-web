@@ -72,7 +72,7 @@ export default function InfoSection() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-slate-900">Punto de retiro y distribución</h4>
+                  <h4 className="font-bold text-sm text-slate-900">Punto de ubicación y distribución</h4>
                   <p className="text-xs text-slate-500">Retiros coordinados previamente por WhatsApp</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function InfoSection() {
               <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative bg-slate-100">
                 <iframe
                   title="Ubicación Roberto Helados"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209.18501667225544!2d-68.7739792184595!3d-32.97845007193964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1788913720484!5m2!1ses!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d836.7399015553531!2d-68.77453773045927!3d-32.97846749834876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU4JzQyLjUiUyA2OMKwNDYnMjYuMCJX!5e0!3m2!1ses!2sar!4v1788926683368!5m2!1ses!2sar"
                   className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="strict-origin-when-cross-origin"
@@ -91,8 +91,8 @@ export default function InfoSection() {
             </div>
 
             <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <span className="text-slate-500 font-medium">📍 Envíos a domicilio en la zona</span>
-              <span className="font-bold text-slate-800">Consultar radio de entrega</span>
+              <span className="text-slate-500 font-medium">Envíos a domicilio en la zona</span>
+              <span className="font-bold text-slate-800">Consultar por el radio de entrega</span>
             </div>
           </div>
         </InfoCardReveal>
@@ -111,7 +111,7 @@ export default function InfoSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-slate-900">Horarios de atención</h4>
-                    <p className="text-xs text-slate-500">Respuesta inmediata de pedidos</p>
+                    <p className="text-xs text-slate-500">Respuesta rápida de pedidos</p>
                   </div>
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
@@ -137,7 +137,7 @@ export default function InfoSection() {
             </div>
 
             <p className="text-[11px] text-slate-600 mt-4 leading-relaxed">
-              * Para pedidos mayoristas o baldes gastronómicos recomendamos encargar con 24 hs de anticipación.
+              Para pedidos mayoristas recomendamos encargar con anticipación.
             </p>
           </div>
         </InfoCardReveal>
@@ -194,7 +194,7 @@ export default function InfoSection() {
             </div>
 
             <p className="text-[11px] text-slate-600 mt-4 leading-relaxed">
-              Aboná contra entrega o por transferencia bancaria previa.
+              El medio de pago final se confirma por WhatsApp al momento de pactar la entrega o retiro con el vendedor.
             </p>
           </div>
         </InfoCardReveal>
@@ -219,13 +219,13 @@ export default function InfoSection() {
               </div>
 
               <p className="text-xs text-slate-600 leading-relaxed">
-                Todos los productos salen directamente de cámara a temperatura controlada. Los envíos se realizan en conservadoras isotérmicas reforzadas para evitar descongelamiento y asegurar que mantenga su consistencia original.
+                Todos los productos salen directamente del freezer a temperatura controlada. Los envíos se realizan en conservadoras para evitar descongelamiento y asegurar que mantenga la consistencia durante el viaje.
               </p>
             </div>
 
             <div className="mt-4 p-3 bg-sky-50 rounded-2xl border border-sky-100 flex items-center gap-2">
               <span className="text-sky-900 font-bold text-xs">Garantía:</span>
-              <span className="text-xs text-slate-700">Producto sellado con precinto inviolable.</span>
+              <span className="text-xs text-slate-700">Productos sellados.</span>
             </div>
           </div>
         </InfoCardReveal>
