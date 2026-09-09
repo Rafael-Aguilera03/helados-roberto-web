@@ -32,10 +32,10 @@ export default function Footer() {
           {/* Enlaces */}
           <nav className="flex items-center gap-6 text-xs font-semibold text-slate-300">
             <a href="#catalogo" className="hover:text-white transition-colors">
-              Productos
+              Catálogo
             </a>
             <a href="#informacion" className="hover:text-white transition-colors">
-              Información y Envíos
+              Información
             </a>
           </nav>
 
