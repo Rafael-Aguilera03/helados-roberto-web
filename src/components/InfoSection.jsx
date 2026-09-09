@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 
+// Función para calcular el estado en el instante exacto del montaje (09:00 a 23:00 hs)
+const getInitialOpenState = () => {
+  const now = new Date();
+  const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
+  return currentDecimalHour >= 9 && currentDecimalHour < 23;
+};
+
 function InfoCardReveal({ children, delay = "0ms" }) {
   const ref = useRef(null);
 
@@ -29,19 +36,19 @@ function InfoCardReveal({ children, delay = "0ms" }) {
 }
 
 export default function InfoSection() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(getInitialOpenState);
 
   useEffect(() => {
     const checkSchedule = () => {
-      const now = new Date();
-      const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
-      setIsOpen(currentDecimalHour >= 9 && currentDecimalHour < 23);
+      setIsOpen(getInitialOpenState());
     };
 
-    checkSchedule();
     const interval = setInterval(checkSchedule, 60000);
     return () => clearInterval(interval);
   }, []);
+
+  // Enlace exacto con el pin DMS idéntico al iframe
+  const mapsExactUrl = "https://www.google.com/maps/place/32%C2%B058'42.5%22S+68%C2%B046'26.0%22W/@-32.978364,-68.773889,19z";
 
   return (
     <section id="informacion" className="mt-20 pt-12 border-t border-slate-200">
@@ -74,7 +81,7 @@ export default function InfoSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
-        {/* TARJETA 1: Ubicación & Mapa con botón de apertura nativa */}
+        {/* TARJETA 1: Ubicación & Mapa */}
         <InfoCardReveal delay="0ms">
           <div className="bg-white rounded-3xl p-5 border border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col justify-between h-full">
             <div>
@@ -92,9 +99,8 @@ export default function InfoSection() {
                   </div>
                 </div>
 
-                {/* Enlace para abrir Google Maps en la app del teléfono */}
                 <a
-                  href="https://maps.google.com/?q=-32.978364,-68.774459"
+                  href={mapsExactUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors"
@@ -104,22 +110,22 @@ export default function InfoSection() {
                 </a>
               </div>
 
-              {/* Iframe oficial */}
+              {/* Iframe con la nueva URL exacta */}
               <div className="w-full h-48 rounded-2xl overflow-hidden border border-slate-200 shadow-inner relative bg-slate-100">
                 <iframe
                   title="Ubicación Roberto Helados"
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d836.740882235697!2d-68.77445930550235!3d-32.97836400790596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU4JzQyLjUiUyA2OMKwNDYnMjYuMCJX!5e0!3m2!1ses!2sus!4v1788929264469!5m2!1ses!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1673.481764471394!2d-68.77510303566592!3d-32.97836400790596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU4JzQyLjUiUyA2OMKwNDYnMjYuMCJX!5e0!3m2!1ses!2sar!4v1788976559662!5m2!1ses!2sar"
                   className="w-full h-full border-0"
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 />
               </div>
 
-              {/* Botón táctil visible en celular */}
+              {/* Botón táctil para celular */}
               <div className="mt-3 sm:hidden">
                 <a
-                  href="https://maps.google.com/?q=-32.978364,-68.774459"
+                  href={mapsExactUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-slate-100 active:bg-slate-200 text-slate-700 text-xs font-bold transition-colors"
@@ -170,9 +176,9 @@ export default function InfoSection() {
 
               <div className="space-y-2 mt-4">
                 <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
-                  <span className="text-xs font-semibold text-slate-700">Todos los días de la semana</span>
+                  <span className="text-xs font-semibold text-slate-700">Lunes a Lunes (Todos los días)</span>
                   <span className="text-xs font-bold text-slate-900 bg-white px-2.5 py-1 rounded-lg border border-slate-200 shadow-2xs">
-                    08:00 — 23:00 hs
+                    09:00 — 23:00 hs
                   </span>
                 </div>
               </div>
