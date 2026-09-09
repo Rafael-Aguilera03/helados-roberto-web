@@ -23,7 +23,7 @@ export default function FloatingWA({ phone }) {
   }, []);
 
   const defaultMessage = encodeURIComponent(
-    'Hola Roberto Helados! Quería consultar disponibilidad y lista de precios.'
+    'Hola Roberto! Quería consultar disponibilidad de productos y lista de precios.'
   );
   const waUrl = `https://wa.me/${phone}?text=${defaultMessage}`;
 
