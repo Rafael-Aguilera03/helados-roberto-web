@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const getInitialOpenState = () => {
   const now = new Date();
   const currentDecimalHour = now.getHours() + now.getMinutes() / 60;
-  // Abierto de Lunes a Lunes de 09:00 a 23:00 hs
+  // Abierto de Lunes a Lunes de 08:00 a 23:00 hs
   return currentDecimalHour >= 8 && currentDecimalHour < 23;
 };
 
@@ -76,66 +76,82 @@ export default function Header() {
             </div>
           )}
 
-          {/* Botón hamburguesa mobile */}
+          {/* Botón hamburguesa animado */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-xl text-slate-300 hover:bg-slate-800 active:bg-slate-700 transition-colors focus:outline-none cursor-pointer"
+            className="md:hidden w-10 h-10 rounded-xl text-slate-300 hover:bg-slate-800 active:bg-slate-700 transition-colors focus:outline-none flex flex-col items-center justify-center gap-1.5 cursor-pointer"
             aria-label="Menú principal"
+            aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? (
-              <svg className="w-6 h-6 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            )}
+            {/* Línea superior */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transition-transform duration-300 ease-in-out ${
+                mobileMenuOpen ? 'rotate-45 translate-y-2' : ''
+              }`}
+            />
+            {/* Línea media */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transition-opacity duration-200 ease-in-out ${
+                mobileMenuOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
+            {/* Línea inferior */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transition-transform duration-300 ease-in-out ${
+                mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''
+              }`}
+            />
           </button>
         </div>
 
       </div>
 
-      {/* Menú mobile desplegable */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-900 border-b border-slate-800 px-4 py-4 flex flex-col gap-2 shadow-xl">
-          {isOpen ? (
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-2">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span>Abierto • Tomando pedidos</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 mb-2">
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
-              <span>Cerrado • Abre 08:00 hs</span>
-            </div>
-          )}
-          
-          <a
-            href="#catalogo"
-            onClick={() => setMobileMenuOpen(false)}
-            className="px-3 py-2.5 rounded-xl font-bold text-sm text-slate-100 hover:bg-slate-800 transition-colors flex items-center justify-between"
-          >
-            <span>Catálogo de Productos</span>
-            <svg className="w-4 h-4 text-sky-400 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
-          </a>
+      {/* Menú mobile desplegable con transición suave de altura (grid-rows) y fade */}
+      <div
+        className={`md:hidden grid transition-all duration-300 ease-in-out border-slate-800 ${
+          mobileMenuOpen
+            ? 'grid-rows-[1fr] opacity-100 border-b shadow-xl'
+            : 'grid-rows-[0fr] opacity-0 border-b-0 pointer-events-none'
+        }`}
+      >
+        <div className="overflow-hidden bg-slate-900">
+          <div className="px-4 py-4 flex flex-col gap-2">
+            {isOpen ? (
+              <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+                </span>
+                <span>Abierto • Tomando pedidos</span>
+              </div>
+            ) : (
+              <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 mb-2">
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
+                <span>Cerrado • Abre 08:00 hs</span>
+              </div>
+            )}
+            
+            <a
+              href="#catalogo"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2.5 rounded-xl font-bold text-sm text-slate-100 hover:bg-slate-800 active:bg-slate-700/60 transition-colors flex items-center justify-between"
+            >
+              <span>Catálogo de Productos</span>
+              <svg className="w-4 h-4 text-sky-400 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+            </a>
 
-          <a
-            href="#informacion"
-            onClick={() => setMobileMenuOpen(false)}
-            className="px-3 py-2.5 rounded-xl font-bold text-sm text-slate-100 hover:bg-slate-800 transition-colors flex items-center justify-between"
-          >
-            <span>Información, Envíos y Pagos</span>
-            <svg className="w-4 h-4 text-sky-400 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
-          </a>
+            <a
+              href="#informacion"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2.5 rounded-xl font-bold text-sm text-slate-100 hover:bg-slate-800 active:bg-slate-700/60 transition-colors flex items-center justify-between"
+            >
+              <span>Información, Envíos y Pagos</span>
+              <svg className="w-4 h-4 text-sky-400 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+            </a>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
