@@ -57,7 +57,7 @@ export default function Footer() {
           <p className="text-slate-400">
             Desarrollo web por{' '}
             <a 
-              href="https://github.com/Rafael-Aguilera03" 
+              href="https://www.linkedin.com/in/rafael-aguilera-dev/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sky-400 hover:text-sky-300 font-semibold transition-colors underline decoration-sky-500/30 underline-offset-2"
