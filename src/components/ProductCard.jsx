@@ -28,8 +28,8 @@ export default function ProductCard({ product, index = 0 }) {
     maximumFractionDigits: 0,
   }).format(product.price);
 
-// Un escalonado suave por fila con tope de 180ms
-const staggeredDelay = `${(index % 3) * 80}ms`;
+  // Un escalonado suave por fila con tope de 180ms
+  const staggeredDelay = `${(index % 3) * 80}ms`;
 
   return (
     <article
@@ -61,6 +61,11 @@ const staggeredDelay = `${(index % 3) * 80}ms`;
               imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}
           />
+
+          {/* Leyenda de imagen ilustrativa */}
+          <span className="absolute bottom-2 right-2 text-[9px] sm:text-[10px] font-medium text-slate-400/80 tracking-tight pointer-events-none select-none z-10">
+            Imágenes ilustrativas
+          </span>
         </div>
 
         {/* Título y detalles */}
