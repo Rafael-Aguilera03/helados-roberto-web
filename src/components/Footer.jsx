@@ -15,8 +15,12 @@ export default function Footer() {
                 strokeLinecap="round" 
                 strokeLinejoin="round"
               >
-                <path d="m7 11 5 11 5-11Z" />
-                <path d="M12 3a5 5 0 0 0-5 5v3h10V8a5 5 0 0 0-5-5Z" />
+                {/* Cuerpo del palito de helado */}
+                <path d="M18 8a6 6 0 0 0-12 0v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8Z" />
+                {/* Hendidura clásica */}
+                <path d="M10 7v4" />
+                {/* Palito de madera */}
+                <path d="M10 18v3a2 2 0 0 0 4 0v-3" />
               </svg>
             </div>
             <div>

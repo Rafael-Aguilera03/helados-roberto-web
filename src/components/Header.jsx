@@ -26,7 +26,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white transition-all">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         
-        {/* Marca */}
+        {/* Marca con ícono */}
         <a href="#" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl bg-sky-600 text-white flex items-center justify-center shadow-md">
             <svg 
@@ -35,8 +35,12 @@ export default function Header() {
               strokeLinecap="round" 
               strokeLinejoin="round"
             >
-              <path d="m7 11 5 11 5-11Z" />
-              <path d="M12 3a5 5 0 0 0-5 5v3h10V8a5 5 0 0 0-5-5Z" />
+              {/* Cuerpo del palito de helado */}
+              <path d="M18 8a6 6 0 0 0-12 0v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8Z" />
+              {/* Hendidura clásica */}
+              <path d="M10 7v4" />
+              {/* Palito de madera */}
+              <path d="M10 18v3a2 2 0 0 0 4 0v-3" />
             </svg>
           </div>
           <div>
@@ -60,7 +64,7 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Badge de estado unificado con los colores de InfoSection */}
+          {/* Badge de estado en escritorio */}
           {isOpen ? (
             <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 shadow-xs">
               <span className="relative flex h-2 w-2">
@@ -72,7 +76,7 @@ export default function Header() {
           ) : (
             <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold bg-rose-500/10 text-rose-400 border border-rose-500/30 shadow-xs">
               <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
-              <span>Cerrado</span>
+              <span>Cerrado • Abre 08:00 hs</span>
             </div>
           )}
 
