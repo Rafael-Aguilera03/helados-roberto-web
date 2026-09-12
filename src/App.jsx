@@ -50,10 +50,19 @@ export default function App() {
     (a, b) => categoryOrder.indexOf(a) - categoryOrder.indexOf(b)
   );
 
-  const availableCategories = sortedCategories.map((catId) => ({
-    id: catId,
-    label: categoryLabels[catId] || catId,
-  }));
+  // Mapear incluyendo el conteo dinámico de productos para cada categoría
+  const availableCategories = [
+    {
+      id: 'todas',
+      label: 'Todos',
+      count: modeProducts.length,
+    },
+    ...sortedCategories.map((catId) => ({
+      id: catId,
+      label: categoryLabels[catId] || catId,
+      count: modeProducts.filter((p) => p.category === catId).length,
+    })),
+  ];
 
   const displayedProducts = selectedCategory === 'todas'
     ? modeProducts
