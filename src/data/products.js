@@ -515,7 +515,7 @@ export const products = [
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Surtido de frutas (60 gr)',
     description: 'Caja sellada de fábrica. Costo por unidad: $415 | Sugerido al público: $600.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-agua.png'
   },
   {
     id: 'mayor-caja-palito-frutal-surtido',
@@ -526,7 +526,7 @@ export const products = [
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Frutilla, Limón, Naranja (1200 gr)',
     description: 'Palitos de agua tradicionales. Costo por unidad: $415.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-surtidos-agua.png'
   },
   {
     id: 'mayor-caja-fortachon',
@@ -537,7 +537,7 @@ export const products = [
     unit: 'Caja x 40 un. ($415 c/u)',
     flavors: 'Frutales infantiles (60 gr)',
     description: 'Caja económica de 40 unidades. Costo por unidad: $415 | Sugerido: $600.',
-    image: '/products/palito-cassata.png'
+    image: '/products/fortachon.png'
   },
   {
     id: 'mayor-caja-bana-bana',
@@ -548,7 +548,7 @@ export const products = [
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Crema infantil (45 gr)',
     description: 'Costo por unidad: $552 | Sugerido al público: $800.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-bana-bana.png'
   },
   {
     id: 'mayor-caja-palito-crema',
@@ -559,7 +559,7 @@ export const products = [
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Vainilla, DDL, Frutilla crema (45 gr)',
     description: 'Caja cerrada x 20. Costo por unidad: $552 | Sugerido: $800.',
-    image: '/products/palito-cassata.png'
+    image: '/products/palitos-crema.png'
   },
   {
     id: 'mayor-caja-kamikaze',
@@ -570,18 +570,18 @@ export const products = [
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Crema y fruta (45 gr)',
     description: 'Costo por unidad: $552 | Sugerido al público: $800.',
-    image: '/products/palito-cassata.png'
+    image: '/products/kamikaze.png'
   },
   {
     id: 'mayor-caja-tiki-carucha',
-    name: 'Caja Que Carucha "Tiki"',
+    name: 'Caja Carucha "Tiki"',
     category: 'cajas-impulsivas',
     mode: 'mayor',
     price: 15456,
     unit: 'Caja x 28 un. ($552 c/u)',
     flavors: 'Caritas heladas cremosas (45 gr)',
     description: 'Caja x 28 unidades. Costo por unidad: $552 | Sugerido: $800.',
-    image: '/products/palito-cassata.png'
+    image: '/products/tiki.png'
   },
   {
     id: 'mayor-caja-bombon-frutal',
@@ -592,7 +592,7 @@ export const products = [
     unit: 'Caja x 36 un. ($552 c/u)',
     flavors: 'Centro frutal con baño de chocolate (50 gr)',
     description: 'Caja grande x 36. Costo por unidad: $552 | Sugerido: $800.',
-    image: '/products/palito-cassata.png'
+    image: '/products/bombon-frutal.png'
   },
   {
     id: 'mayor-pack-bombon-10',
@@ -603,7 +603,7 @@ export const products = [
     unit: 'Pack x 10 un. ($725 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
     description: 'Pack chico de rápida rotación. Costo unitario: $725 | Sugerido: $1.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-bombon.png'
   },
   {
     id: 'mayor-caja-bombon-20',
@@ -614,7 +614,7 @@ export const products = [
     unit: 'Caja x 20 un. ($690 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
     description: 'Formato estándar comercial. Costo unitario: $690 | Sugerido: $1.000.',
-    image: '/products/palito-cassata.png',
+    image: '/products/caja-bombon.png',
     badge: 'ALTA ROTACIÓN'
   },
   {
@@ -626,7 +626,7 @@ export const products = [
     unit: 'Caja x 36 un. ($690 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
     description: 'Caja mayorista cerrada x 36. Costo por unidad: $690.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-bombon.png'
   },
   {
     id: 'mayor-caja-cassatta',
@@ -648,7 +648,7 @@ export const products = [
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Chocolate y maní crocante (68 gr)',
     description: 'Línea impulso premium. Costo unitario: $1.036 | Sugerido: $1.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/crocky.png'
   },
   {
     id: 'mayor-caja-golden-max',
@@ -659,7 +659,7 @@ export const products = [
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Cobertura chocolate negro (68 gr)',
     description: 'Caja x 12 un. Costo unitario: $1.036 | Sugerido: $1.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/max.png'
   },
   {
     id: 'mayor-caja-golden-max-blanco',
@@ -670,7 +670,7 @@ export const products = [
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Cobertura chocolate blanco (68 gr)',
     description: 'Caja x 12 un. Costo unitario: $1.036 | Sugerido: $1.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/blanco.png'
   },
   {
     id: 'mayor-caja-vasito-dame-mas',
@@ -681,7 +681,7 @@ export const products = [
     unit: 'Caja x 12 un. ($1.380 c/u)',
     flavors: 'DDL y Americana (110 gr)',
     description: 'Caja x 12 unidades. Costo por pote: $1.380 | Sugerido: $2.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/dame-mas.png'
   },
   {
     id: 'mayor-caja-cono-menta',
@@ -692,7 +692,7 @@ export const products = [
     unit: 'Caja x 14 un. ($1.726 c/u)',
     flavors: 'Cucurucho menta granizada (80 gr)',
     description: 'Caja x 14 unidades. Costo: $1.726 c/u | Sugerido: $2.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/cono-menta.png'
   },
   {
     id: 'mayor-caja-cono-bola',
@@ -703,7 +703,7 @@ export const products = [
     unit: 'Caja x 14 un. ($1.726 c/u)',
     flavors: 'Cucurucho con bocha dulce (80 gr)',
     description: 'Caja x 14 unidades. Costo: $1.726 c/u | Sugerido: $2.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/cono-bola.png'
   },
   {
     id: 'mayor-caja-cono-flama',
@@ -714,7 +714,7 @@ export const products = [
     unit: 'Caja x 12 un. ($2.071 c/u)',
     flavors: 'Cono grande con salsa (110 gr)',
     description: 'Caja x 12 unidades. Costo: $2.071 c/u | Sugerido: $3.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/cono-flama.png'
   },
   {
     id: 'mayor-caja-potes-telgopor',
@@ -725,7 +725,7 @@ export const products = [
     unit: 'Caja x 36 un. ($1.436 c/u)',
     flavors: 'Surtido térmico (180 gr)',
     description: 'Caja mayorista x 36 potes. Costo unitario: $1.436 | Sugerido: $2.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/pote.png'
   },
   {
     id: 'mayor-caja-bocaditos',
@@ -736,7 +736,7 @@ export const products = [
     unit: 'Bulto x 8 cajas ($4.143 c/u)',
     flavors: 'Cada cajita trae 12 bocaditos (120 gr)',
     description: 'Bulto con 8 cajas para freezer exhibidor. Sugerido x caja: $6.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/caja-bocaditos.png'
   },
 
   // --- 2. Baldes Gastronómicos 10L ---
@@ -749,7 +749,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Limón, Frutilla, Naranja',
     description: 'Línea Fripper/Tropic para gastronomía y heladerías.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-prem-agua',
@@ -760,7 +760,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Sabores frutales de alta densidad',
     description: 'Balde gastronómico de agua calidad premium.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-artesanal-base',
@@ -771,7 +771,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Vainilla, Dulce de Leche, Americana, Chocolate',
     description: 'Cremas tradicionales de alta rotación para eventos y locales.',
-    image: '/products/palito-cassata.png',
+    image: '/products/balde-10l.png',
     badge: 'GASTRONOMÍA'
   },
   {
@@ -783,7 +783,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Banana Split, Menta Granizada, Frutilla a la Crema',
     description: 'Cremas elaboradas con materias primas seleccionadas.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-artesanal-sembrado',
@@ -794,7 +794,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Granizado, Chocolate con Almendras, Tramontana',
     description: 'Helado artesanal con trozos de chocolate, frutos secos y galletitas.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-prem-base',
@@ -805,7 +805,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Dulce de Leche Premium, Americana Doble Crema',
     description: 'Máxima untuosidad y porcentaje graso gastronómico.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-prem-especial',
@@ -816,7 +816,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Chantilly con Frutillas, Tiramisú, Mousse de Limón',
     description: 'Recetas exclusivas para servicio gastronómico de alta gama.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-10l.png'
   },
   {
     id: 'mayor-balde-10l-prem-sembrado',
@@ -827,7 +827,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Mascarpone con Frutos Rojos, DDL Granizado Especial',
     description: 'Cremas gourmet con abundantes inclusiones y veteados.',
-    image: '/products/palito-cassata.png',
+    image: '/products/balde-10l.png',
     badge: 'CALIDAD SUPERIOR'
   },
 
@@ -852,7 +852,7 @@ export const products = [
     unit: 'x balde 3 Litros',
     flavors: 'Surtidos clásicos',
     description: 'Costo mayorista: $8.438 | Sugerido al público: $11.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-fripper.png'
   },
   {
     id: 'mayor-balde-3l-vento',
@@ -863,7 +863,7 @@ export const products = [
     unit: 'x balde 3 Litros',
     flavors: 'Línea Vento Gelato envasado',
     description: 'Costo mayorista: $8.438 | Sugerido al público: $11.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde.png'
   },
   {
     id: 'mayor-balde-3l-lomoro',
@@ -874,7 +874,7 @@ export const products = [
     unit: 'x balde 3 Litros (1,5 Kg)',
     flavors: 'Sabores Lomoro envasados de origen',
     description: 'Costo mayorista: $12.083 | Sugerido al público: $17.500.',
-    image: '/products/palito-cassata.png',
+    image: '/products/balde-lomoro.png',
     badge: 'LOMORO OFICIAL'
   },
   {
@@ -886,7 +886,7 @@ export const products = [
     unit: 'x balde 5 Litros',
     flavors: 'Cremas combinadas',
     description: 'Costo mayorista: $13.109 | Sugerido al público: $18.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/balde-fripper-5l.png'
   },
   {
     id: 'mayor-balde-5l-gourmet',
@@ -909,7 +909,7 @@ export const products = [
     unit: 'x pote 750 cc (450 gr)',
     flavors: 'Helado al Champagne con Limón',
     description: 'Costo mayorista: $4.143 | Sugerido al público: $6.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/lemon-champ.png'
   },
   {
     id: 'mayor-pote-750-irresistible',
@@ -920,7 +920,7 @@ export const products = [
     unit: 'x pote 750 cc (450 gr)',
     flavors: 'Cremas especiales y dulce de leche repostero',
     description: 'Costo mayorista: $5.178 | Sugerido al público: $7.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/irresistibles.png'
   },
   {
     id: 'mayor-pote-1lt-cassata',
@@ -931,7 +931,7 @@ export const products = [
     unit: 'x pote 1 Litro (500 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
     description: 'Costo mayorista: $5.870 | Sugerido al público: $8.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/cassata-balde.png'
   },
 
   // --- 4. Packs Postres y Alfajores ---
@@ -944,7 +944,7 @@ export const products = [
     unit: 'Pack x 8 un. ($604 c/u)',
     flavors: 'Crema bañada (34 gr)',
     description: 'Costo por unidad: $604 | Sugerido por pack: $7.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/barrita-helada.png'
   },
   {
     id: 'mayor-pack-barrita-crocante',
@@ -955,7 +955,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate y maní (70 gr)',
     description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/barrita-crocante.png'
   },
   {
     id: 'mayor-pack-barrita-mundial',
@@ -966,7 +966,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'DDL y chocolate (70 gr)',
     description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/barrita-mundial.png'
   },
   {
     id: 'mayor-pack-barra-dubai',
@@ -977,7 +977,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Pistacho y chocolate (50 gr)',
     description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
-    image: '/products/palito-cassata.png',
+    image: '/products/barrita-dubai.png',
     badge: 'NOVEDAD'
   },
   {
@@ -989,7 +989,7 @@ export const products = [
     unit: 'Pack x 6 un. ($1.611 c/u)',
     flavors: 'Dulce de leche y chocolate negro (80 gr)',
     description: 'Costo por unidad: $1.611 | Sugerido por pack: $14.000.',
-    image: '/products/palito-cassata.png',
+    image: '/products/alfajores-premium.png',
     badge: 'MÁS VENDIDO'
   },
   {
@@ -1001,7 +1001,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.597 c/u)',
     flavors: 'Crema crocante (80 gr)',
     description: 'Costo por unidad: $1.597 | Sugerido por pack: $18.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/alfajor-hit.png'
   },
   {
     id: 'mayor-pack-alfajor-sin-gluten',
@@ -1012,7 +1012,7 @@ export const products = [
     unit: 'Pack x 6 un. ($1.611 c/u)',
     flavors: 'Sin TACC garantizado (80 gr)',
     description: 'Costo por unidad: $1.611 | Sugerido por pack: $14.000.',
-    image: '/products/palito-cassata.png',
+    image: '/products/alfajor-sin-gluten.png',
     badge: 'SIN TACC'
   },
   {
@@ -1024,7 +1024,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate y crema (80 gr)',
     description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/bombon-escoces-negro.png'
   },
   {
     id: 'mayor-pack-bombon-escoces-blanco',
@@ -1035,7 +1035,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate blanco y crema (80 gr)',
     description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/bombon-escoces-blanco.png'
   },
   {
     id: 'mayor-pack-bombon-suizo',
@@ -1046,7 +1046,7 @@ export const products = [
     unit: 'Pack x 8 un. ($1.208 c/u)',
     flavors: 'Dulce de leche central (80 gr)',
     description: 'Costo por unidad: $1.208 | Sugerido por pack: $14.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/bombon-suizo.png'
   },
   {
     id: 'mayor-pack-postre-alm-etiqueta',
@@ -1057,7 +1057,7 @@ export const products = [
     unit: 'Pack x 8 un. ($906 c/u)',
     flavors: 'Crema con crocante de almendras (80 gr)',
     description: 'Costo por unidad: $906 | Sugerido por pack: $10.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/almendrado.png'
   },
   {
     id: 'mayor-pack-postre-almendrado-10',
@@ -1068,7 +1068,7 @@ export const products = [
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Almendrado clásico (80 gr)',
     description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/almendrado.png'
   },
   {
     id: 'mayor-pack-postre-cassata-10',
@@ -1079,7 +1079,7 @@ export const products = [
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Tricolor tradicional (80 gr)',
     description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/cassata.png'
   },
   {
     id: 'mayor-pack-postre-limon-cocado-10',
@@ -1090,7 +1090,7 @@ export const products = [
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Limón y coco (80 gr)',
     description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
-    image: '/products/palito-cassata.png'
+    image: '/products/limon-cocado.png'
   },
   {
     id: 'mayor-pack-postre-mixto-8',
@@ -1101,7 +1101,7 @@ export const products = [
     unit: 'Pack x 8 un. ($906 c/u)',
     flavors: 'Surtido de sabores (80 gr)',
     description: 'Costo por unidad: $906 | Sugerido por pack: $10.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/mixto-caja.png'
   },
   {
     id: 'mayor-postre-camely',
@@ -1112,7 +1112,7 @@ export const products = [
     unit: 'x barra familiar (600 gr)',
     flavors: 'Crema y bizcochuelo',
     description: 'Costo mayorista: $7.250 | Sugerido al público: $10.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/camely.png'
   },
   {
     id: 'mayor-barra-crocante',
@@ -1123,7 +1123,7 @@ export const products = [
     unit: 'x barra familiar (600 gr)',
     flavors: 'Crema con lluvia crocante',
     description: 'Costo mayorista: $7.250 | Sugerido al público: $10.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/barra-crocante.png'
   },
   {
     id: 'mayor-torta-economica',
@@ -1134,7 +1134,7 @@ export const products = [
     unit: 'x unidad entera (1000 gr)',
     flavors: 'Dulce de leche y americana',
     description: 'Costo mayorista: $11.393 | Sugerido al público: $16.500.',
-    image: '/products/palito-cassata.png'
+    image: '/products/tortas.png'
   },
   {
     id: 'mayor-torta-premium',
@@ -1145,7 +1145,7 @@ export const products = [
     unit: 'x unidad entera (1000 gr)',
     flavors: 'Cremas gourmet decoradas',
     description: 'Costo mayorista: $20.715 | Sugerido al público: $30.000.',
-    image: '/products/palito-cassata.png',
+    image: '/products/tortas.png',
     badge: 'GOURMET'
   }
 ];
