@@ -515,7 +515,7 @@ export const products = [
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Surtido de frutas (60 gr)',
     description: 'Caja cerrada para freezer comercial. Costo unitario: $415 | Sugerido al público: $600.',
-    image: '/products/caja-agua.png'
+    image: '/products/caja-surtidos-agua.png'
   },
   {
     id: 'mayor-caja-palito-frutal-surtido',
