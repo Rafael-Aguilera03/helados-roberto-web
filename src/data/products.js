@@ -13,7 +13,7 @@ export const products = [
     price: 1000,
     unit: 'x unidad (60 gr)',
     flavors: 'Frutilla, Naranja, Limón',
-    description: 'Palito de agua refrescante elaborado con fruta.',
+    description: 'Palito de agua tradicional, refrescante y liviano.',
     image: '/products/palitos-de-agua.png',
     badge: 'MÁS VENDIDO'
   },
@@ -24,8 +24,8 @@ export const products = [
     mode: 'menor',
     price: 1000,
     unit: 'x unidad (60 gr)',
-    flavors: 'Surtido frutal enriquecido',
-    description: 'Palito frutal infantil adicionado con Vitamina C.',
+    flavors: 'Surtido frutal',
+    description: 'Palito de agua frutal para chicos, fortificado con Vitamina C.',
     image: '/products/fortachon.png',
   },
   {
@@ -35,8 +35,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Crema saborizada',
-    description: 'Clásico palito infantil cremoso.',
+    flavors: 'Crema sabor banana con punta de chocolate',
+    description: 'Clásico palito infantil de crema con baño en la punta.',
     image: '/products/bana-bana.png',
   },
   {
@@ -47,7 +47,7 @@ export const products = [
     price: 1500,
     unit: 'x unidad (45 gr)',
     flavors: 'Vainilla, Frutilla a la crema, Dulce de Leche',
-    description: 'Palito cremoso tradicional de textura suave.',
+    description: 'Palito cremoso clásico de textura suave.',
     image: '/products/palitos-crema.png'
   },
   {
@@ -57,8 +57,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Crema y frutal combinado',
-    description: 'Palito bicolor de impulso infantil.',
+    flavors: 'Combinación frutal y crema',
+    description: 'Palito bicolor de impulso que combina agua y crema.',
     image: '/products/kamikaze.png'
   },
   {
@@ -68,8 +68,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Crema con carita divertida',
-    description: 'Palito temático con carita modelada para chicos.',
+    flavors: 'Crema saborizada',
+    description: 'Palito de crema con divertida forma de carita infantil.',
     image: '/products/tiki.png'
   },
   {
@@ -79,8 +79,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (50 gr)',
-    flavors: 'Fruta con baño crocante',
-    description: 'Centro frutal recubierto con baño de repostería.',
+    flavors: 'Centro frutal con cobertura de chocolate',
+    description: 'Palito de fruta recubierto con crocante baño de repostería.',
     image: '/products/bombon-frutal.png'
   },
   {
@@ -91,7 +91,7 @@ export const products = [
     price: 1500,
     unit: 'x unidad (50 gr)',
     flavors: 'Crema Americana con Chocolate',
-    description: 'Clásico palito de crema americana bañado en chocolate semiamargo.',
+    description: 'El clásico de siempre: suave crema americana con cobertura de chocolate semiamargo.',
     image: '/products/bombon-clasico.png',
     badge: 'CLÁSICO'
   },
@@ -103,7 +103,7 @@ export const products = [
     price: 1500,
     unit: 'x unidad (60 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Palito tricolor con la clásica combinación cassata.',
+    description: 'Palito helado tricolor con la clásica combinación de tres gustos.',
     image: '/products/palito-cassata.png'
   },
   {
@@ -113,8 +113,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (68 gr)',
-    flavors: 'Crema crocante con maní',
-    description: 'Palito bombón premium bañado en chocolate con trozos crocantes.',
+    flavors: 'Crema bañada con maní tostado',
+    description: 'Palito bombón premium con gruesa cobertura de chocolate y trocitos de maní crocante.',
     image: '/products/crocky.png',
     badge: 'PREMIUM'
   },
@@ -126,7 +126,7 @@ export const products = [
     price: 2000,
     unit: 'x unidad (68 gr)',
     flavors: 'Crema Americana y Chocolate Negro',
-    description: 'Palito premium con gruesa cobertura de chocolate negro.',
+    description: 'Palito de crema premium con capa extra de chocolate semiamargo.',
     image: '/products/max.png',
     badge: 'PREMIUM'
   },
@@ -138,7 +138,7 @@ export const products = [
     price: 2000,
     unit: 'x unidad (68 gr)',
     flavors: 'Crema Americana y Chocolate Blanco',
-    description: 'Palito premium recubierto con baño de chocolate blanco.',
+    description: 'Palito de crema premium recubierto con baño de chocolate blanco.',
     image: '/products/blanco.png',
     badge: 'PREMIUM'
   },
@@ -150,7 +150,7 @@ export const products = [
     price: 2500,
     unit: 'x unidad (80 gr)',
     flavors: 'Menta granizada con chocolate',
-    description: 'Cucurucho crocante relleno con helado de menta y cobertura.',
+    description: 'Cucurucho crocante relleno de helado de menta granizada y cobertura de chocolate.',
     image: '/products/cono-menta.png'
   },
   {
@@ -161,7 +161,7 @@ export const products = [
     price: 2500,
     unit: 'x unidad (80 gr)',
     flavors: 'Dulce de Leche y Crema',
-    description: 'Cucurucho con bocha helada y baño de repostería.',
+    description: 'Cucurucho crocante coronado con bocha de crema helada y baño dulce.',
     image: '/products/cono-bola.png'
   },
   {
@@ -172,7 +172,7 @@ export const products = [
     price: 3000,
     unit: 'x unidad (110 gr)',
     flavors: 'Chocolates combinados y salsa',
-    description: 'Cucurucho gigante con helado cremoso y corazón de salsa.',
+    description: 'Cucurucho de gran tamaño con abundante helado cremoso y corazón de salsa.',
     image: '/products/cono-flama.png',
     badge: 'TAMAÑO XL'
   },
@@ -186,7 +186,7 @@ export const products = [
     price: 2000,
     unit: 'x unidad (110 gr)',
     flavors: 'Dulce de Leche y Crema Americana',
-    description: 'Vasito individual ideal para postre o merienda.',
+    description: 'Vasito individual clásico, práctico para postre o merienda.',
     image: '/products/dame-mas.png'
   },
   {
@@ -197,7 +197,7 @@ export const products = [
     price: 3000,
     unit: 'x unidad (180 gr)',
     flavors: 'Sabores surtidos a elección',
-    description: 'Pote térmico conservador individual de alta densidad.',
+    description: 'Pote térmico individual que mantiene la temperatura perfecta del helado.',
     image: '/products/pote.png'
   },
   {
@@ -207,8 +207,8 @@ export const products = [
     mode: 'menor',
     price: 6000,
     unit: 'caja 12 bocaditos (120 gr)',
-    flavors: 'Crema con baño de chocolate',
-    description: 'Bocaditos individuales helados recubiertos en chocolate.',
+    flavors: 'Crema americana bañada en chocolate',
+    description: 'Caja de bocaditos helados individuales para picar o compartir.',
     image: '/products/bocaditos.png',
     badge: 'PARA COMPARTIR'
   },
@@ -219,8 +219,8 @@ export const products = [
     mode: 'menor',
     price: 6000,
     unit: 'pote 750 cc (450 gr)',
-    flavors: 'Helado de Limón al Champagne',
-    description: 'Especialidad refrescante para postres y brindis.',
+    flavors: 'Limón al Champagne',
+    description: 'Especialidad cremosa y refrescante, ideal como postre de sobremesa.',
     image: '/products/lemon-champ.png'
   },
   {
@@ -231,7 +231,7 @@ export const products = [
     price: 6000,
     unit: 'pote 750 cc (450 gr)',
     flavors: 'Cremas especiales con salsas y sembrados',
-    description: 'Receta gourmet con granizado y dulce de leche repostero.',
+    description: 'Postre gourmet en pote con generosas capas de salsa y trocitos dulces.',
     image: '/products/irresistibles.png',
     badge: 'ESPECIAL'
   },
@@ -243,7 +243,7 @@ export const products = [
     price: 8500,
     unit: 'pote 1 Litro (500 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Clásico formato familiar de tres sabores tradicionales.',
+    description: 'Pote familiar de tres gustos tradicionales para compartir en la mesa.',
     image: '/products/cassata-balde.png'
   },
 
@@ -254,9 +254,9 @@ export const products = [
     category: 'postres-alfajores',
     mode: 'menor',
     price: 2000,
-    unit: 'pack individual / mini (34 gr)',
-    flavors: 'Crema y cobertura',
-    description: 'Barrita helada crocante de consumo rápido.',
+    unit: 'pack individual (34 gr)',
+    flavors: 'Crema y baño de chocolate',
+    description: 'Snack helado crocante y liviano de consumo rápido.',
     image: '/products/barrita-helada.png'
   },
   {
@@ -266,8 +266,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (70 gr)',
-    flavors: 'Chocolate y maní crocante',
-    description: 'Barra rellena de helado con baño crocante premium.',
+    flavors: 'Chocolate con maní crocante',
+    description: 'Barra rellena de crema helada con crocante baño de repostería.',
     image: '/products/barrita-crocante.png'
   },
   {
@@ -278,7 +278,7 @@ export const products = [
     price: 2000,
     unit: 'x unidad (70 gr)',
     flavors: 'Dulce de leche y chocolate',
-    description: 'Edición especial rellena de helado y dulce de leche.',
+    description: 'Edición especial rellena de crema helada y dulce de leche repostero.',
     image: '/products/barrita-mundial.png'
   },
   {
@@ -289,7 +289,7 @@ export const products = [
     price: 2000,
     unit: 'x unidad (50 gr)',
     flavors: 'Pistacho y chocolate semiamargo',
-    description: 'Exclusiva barra inspirada en sabores de pistacho y cacao.',
+    description: 'Barra helada inspirada en sabores de pistacho con fina terminación de cacao.',
     image: '/products/barrita-dubai.png',
     badge: 'TENDENCIA'
   },
@@ -300,8 +300,8 @@ export const products = [
     mode: 'menor',
     price: 3000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Dulce de leche con cobertura chocolate negro',
-    description: 'Relleno de abundante helado con masa suave y baño de chocolate.',
+    flavors: 'Dulce de leche y cobertura de chocolate',
+    description: 'Galleta suave rellena de abundante helado de dulce de leche con baño de chocolate.',
     image: '/products/alfajores-premium.png',
     badge: 'RECOMENDADO'
   },
@@ -312,8 +312,8 @@ export const products = [
     mode: 'menor',
     price: 18500,
     unit: 'x unidad (80 gr)',
-    flavors: 'Doble crema y baño crocante',
-    description: 'Alfajor helado de alta densidad con cobertura crocante.',
+    flavors: 'Crema helada con baño crocante',
+    description: 'Alfajor helado de masa suave con densa capa crocante exterior.',
     image: '/products/alfajor-hit.png'
   },
   {
@@ -324,7 +324,7 @@ export const products = [
     price: 14000,
     unit: 'x unidad (80 gr)',
     flavors: 'Dulce de leche apto celíacos',
-    description: 'Alfajor helado certificado libre de gluten con envasado hermético.',
+    description: 'Alfajor helado libre de gluten, certificado y envasado herméticamente.',
     image: '/products/alfajor-sin-gluten.png',
     badge: 'SIN TACC'
   },
@@ -335,8 +335,8 @@ export const products = [
     mode: 'menor',
     price: 15000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Crema americana con corazón y chocolate',
-    description: 'Postre helado individual bañado en chocolate con crocante.',
+    flavors: 'Crema americana, dulce de leche y crocante',
+    description: 'Postre individual de crema con corazón dulce, bañado en chocolate y crocante.',
     image: '/products/bombon-escoces-negro.png'
   },
   {
@@ -347,7 +347,7 @@ export const products = [
     price: 15000,
     unit: 'x unidad (80 gr)',
     flavors: 'Crema con baño de chocolate blanco',
-    description: 'Postre helado individual recubierto con chocolate blanco.',
+    description: 'Versión del clásico bombón con dulce interior y cobertura de chocolate blanco.',
     image: '/products/bombon-escoces-blanco.png'
   },
   {
@@ -358,7 +358,7 @@ export const products = [
     price: 14000,
     unit: 'x unidad (80 gr)',
     flavors: 'Dulce de leche y chocolate',
-    description: 'Clásico postre helado con dulce de leche natural central.',
+    description: 'Postre helado individual con corazón de dulce de leche y baño de cacao.',
     image: '/products/bombon-suizo.png'
   },
   {
@@ -368,8 +368,8 @@ export const products = [
     mode: 'menor',
     price: 17000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Crema helada con lluvia de almendras',
-    description: 'Porción clásica con generosa cobertura de almendras tostadas picadas.',
+    flavors: 'Crema helada con almendras tostadas',
+    description: 'Porción clásica de crema helada cubierta con abundantes almendras tostadas picadas.',
     image: '/products/almendrado.png'
   },
   {
@@ -380,7 +380,7 @@ export const products = [
     price: 17000,
     unit: 'x unidad (80 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Corte tradicional de tres sabores para postre de mesa.',
+    description: 'Corte tradicional tricolor para servir como postre de sobremesa.',
     image: '/products/cassata.png'
   },
   {
@@ -390,8 +390,8 @@ export const products = [
     mode: 'menor',
     price: 17000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Limón cremoso con coco rallado',
-    description: 'Combinación fresca de crema cítrica y coco natural.',
+    flavors: 'Crema de limón y coco rallado',
+    description: 'Postre helado individual con el contraste cítrico del limón y la suavidad del coco.',
     image: '/products/limon-cocado.png'
   },
   {
@@ -402,7 +402,7 @@ export const products = [
     price: 10500,
     unit: 'barra familiar (600 gr)',
     flavors: 'Crema, dulce de leche y bizcochuelo',
-    description: 'Postre familiar para cortar en porciones.',
+    description: 'Barra helada tipo postre casero, lista para cortar en porciones y compartir.',
     image: '/products/camely.png'
   },
   {
@@ -413,7 +413,7 @@ export const products = [
     price: 10500,
     unit: 'barra familiar (600 gr)',
     flavors: 'Crema con lluvia crocante',
-    description: 'Barra helada ideal para servir en reuniones familiares.',
+    description: 'Barra de helado cremoso terminada con lluvia de crocante dulce.',
     image: '/products/barra-crocante.png'
   },
   {
@@ -424,7 +424,7 @@ export const products = [
     price: 16500,
     unit: 'entera (1000 gr / 1 Kg)',
     flavors: 'Dulce de leche y americana',
-    description: 'Torta helada rendidora decorada para festejos.',
+    description: 'Torta helada rendidora de dos sabores, perfecta para festejos y reuniones.',
     image: '/products/tortas.png'
   },
   {
@@ -434,8 +434,8 @@ export const products = [
     mode: 'menor',
     price: 30000,
     unit: 'entera (1000 gr / 1 Kg)',
-    flavors: 'Cremas especiales, salsas y baño crocante',
-    description: 'Torta helada artesanal con terminación gourmet.',
+    flavors: 'Cremas especiales decoradas con salsas',
+    description: 'Torta helada artesanal con terminación gourmet para ocasiones especiales.',
     image: '/products/tortas.png',
     badge: 'FIESTAS'
   },
@@ -449,7 +449,7 @@ export const products = [
     price: 8000,
     unit: 'balde 2 Litros',
     flavors: 'Sabores clásicos combinados',
-    description: 'Balde térmico familiar con manija, práctico para el freezer de casa.',
+    description: 'Balde familiar práctico con manija, tamaño justo para el freezer del hogar.',
     image: '/products/balde.png'
   },
   {
@@ -460,7 +460,7 @@ export const products = [
     price: 11500,
     unit: 'balde 3 Litros',
     flavors: 'Dulce de Leche, Granizado, Frutilla',
-    description: 'Excelente relación de volumen y cremosidad para la familia.',
+    description: 'Balde de tres sabores con excelente rendimiento familiar.',
     image: '/products/balde-fripper.png',
     badge: 'MÁS ELEGIDO'
   },
@@ -472,7 +472,7 @@ export const products = [
     price: 11500,
     unit: 'balde 3 Litros',
     flavors: 'Cereza, Dulce de Leche, Chocolate',
-    description: 'Línea Vento Gelato envasado de fábrica.',
+    description: 'Helado cremoso envasado de origen con combinaciones clásicas.',
     image: '/products/balde.png'
   },
   {
@@ -483,7 +483,7 @@ export const products = [
     price: 17500,
     unit: 'balde 3 Litros (1,5 Kg)',
     flavors: 'Línea Clásica y Especiales Lomoro',
-    description: 'Calidad superior envasada en origen con precinto de seguridad.',
+    description: 'Calidad tradicional Lomoro envasada en fábrica con precinto de seguridad.',
     image: '/products/balde-lomoro.png',
     badge: 'CALIDAD LOMORO'
   },
@@ -495,7 +495,7 @@ export const products = [
     price: 18000,
     unit: 'balde 5 Litros',
     flavors: 'Sabores combinados a elección',
-    description: 'Gran formato familiar para cumpleaños, eventos y juntadas.',
+    description: 'Formato extra grande de máximo rendimiento para fiestas y reuniones.',
     image: '/products/balde-fripper-5l.png'
   },
 
@@ -514,7 +514,7 @@ export const products = [
     price: 8300,
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Surtido de frutas (60 gr)',
-    description: 'Caja sellada de fábrica. Costo por unidad: $415 | Sugerido al público: $600.',
+    description: 'Caja cerrada para freezer comercial. Costo unitario: $415 | Sugerido al público: $600.',
     image: '/products/caja-agua.png'
   },
   {
@@ -525,7 +525,7 @@ export const products = [
     price: 8300,
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Frutilla, Limón, Naranja (1200 gr)',
-    description: 'Palitos de agua tradicionales. Costo por unidad: $415.',
+    description: 'Palitos de agua tradicionales. Costo unitario: $415 | Sugerido al público: $600.',
     image: '/products/caja-surtidos-agua.png'
   },
   {
@@ -536,7 +536,7 @@ export const products = [
     price: 16600,
     unit: 'Caja x 40 un. ($415 c/u)',
     flavors: 'Frutales infantiles (60 gr)',
-    description: 'Caja económica de 40 unidades. Costo por unidad: $415 | Sugerido: $600.',
+    description: 'Presentación económica x 40. Costo unitario: $415 | Sugerido al público: $600.',
     image: '/products/fortachon.png'
   },
   {
@@ -547,7 +547,7 @@ export const products = [
     price: 11040,
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Crema infantil (45 gr)',
-    description: 'Costo por unidad: $552 | Sugerido al público: $800.',
+    description: 'Palito de alta demanda infantil. Costo unitario: $552 | Sugerido al público: $800.',
     image: '/products/caja-bana-bana.png'
   },
   {
@@ -558,7 +558,7 @@ export const products = [
     price: 11040,
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Vainilla, DDL, Frutilla crema (45 gr)',
-    description: 'Caja cerrada x 20. Costo por unidad: $552 | Sugerido: $800.',
+    description: 'Caja sellada de fábrica x 20. Costo unitario: $552 | Sugerido al público: $800.',
     image: '/products/palitos-crema.png'
   },
   {
@@ -569,7 +569,7 @@ export const products = [
     price: 11040,
     unit: 'Caja x 20 un. ($552 c/u)',
     flavors: 'Crema y fruta (45 gr)',
-    description: 'Costo por unidad: $552 | Sugerido al público: $800.',
+    description: 'Caja cerrada x 20 unidades. Costo unitario: $552 | Sugerido al público: $800.',
     image: '/products/kamikaze.png'
   },
   {
@@ -580,7 +580,7 @@ export const products = [
     price: 15456,
     unit: 'Caja x 28 un. ($552 c/u)',
     flavors: 'Caritas heladas cremosas (45 gr)',
-    description: 'Caja x 28 unidades. Costo por unidad: $552 | Sugerido: $800.',
+    description: 'Caja exhibidora x 28 unidades. Costo unitario: $552 | Sugerido al público: $800.',
     image: '/products/tiki.png'
   },
   {
@@ -591,7 +591,7 @@ export const products = [
     price: 19872,
     unit: 'Caja x 36 un. ($552 c/u)',
     flavors: 'Centro frutal con baño de chocolate (50 gr)',
-    description: 'Caja grande x 36. Costo por unidad: $552 | Sugerido: $800.',
+    description: 'Caja mayorista x 36 unidades. Costo unitario: $552 | Sugerido al público: $800.',
     image: '/products/bombon-frutal.png'
   },
   {
@@ -602,7 +602,7 @@ export const products = [
     price: 7250,
     unit: 'Pack x 10 un. ($725 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
-    description: 'Pack chico de rápida rotación. Costo unitario: $725 | Sugerido: $1.000.',
+    description: 'Pack chico de reposición rápida. Costo unitario: $725 | Sugerido al público: $1.000.',
     image: '/products/caja-bombon.png'
   },
   {
@@ -613,7 +613,7 @@ export const products = [
     price: 13800,
     unit: 'Caja x 20 un. ($690 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
-    description: 'Formato estándar comercial. Costo unitario: $690 | Sugerido: $1.000.',
+    description: 'Formato estándar de alta rotación. Costo unitario: $690 | Sugerido al público: $1.000.',
     image: '/products/caja-bombon.png',
     badge: 'ALTA ROTACIÓN'
   },
@@ -625,7 +625,7 @@ export const products = [
     price: 24840,
     unit: 'Caja x 36 un. ($690 c/u)',
     flavors: 'Americana bañada en chocolate (50 gr)',
-    description: 'Caja mayorista cerrada x 36. Costo por unidad: $690.',
+    description: 'Caja grande cerrada para comercios. Costo unitario: $690 | Sugerido al público: $1.000.',
     image: '/products/caja-bombon.png'
   },
   {
@@ -636,7 +636,7 @@ export const products = [
     price: 13800,
     unit: 'Caja x 20 un. ($690 c/u)',
     flavors: 'Frutilla, Vainilla y Chocolate (60 gr)',
-    description: 'Caja x 20 unidades. Costo unitario: $690 | Sugerido: $1.000.',
+    description: 'Caja cerrada x 20 unidades. Costo unitario: $690 | Sugerido al público: $1.000.',
     image: '/products/palito-cassata.png'
   },
   {
@@ -647,7 +647,7 @@ export const products = [
     price: 12432,
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Chocolate y maní crocante (68 gr)',
-    description: 'Línea impulso premium. Costo unitario: $1.036 | Sugerido: $1.500.',
+    description: 'Línea bombón premium. Costo unitario: $1.036 | Sugerido al público: $1.500.',
     image: '/products/crocky.png'
   },
   {
@@ -658,7 +658,7 @@ export const products = [
     price: 12432,
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Cobertura chocolate negro (68 gr)',
-    description: 'Caja x 12 un. Costo unitario: $1.036 | Sugerido: $1.500.',
+    description: 'Línea bombón premium. Costo unitario: $1.036 | Sugerido al público: $1.500.',
     image: '/products/max.png'
   },
   {
@@ -669,7 +669,7 @@ export const products = [
     price: 12432,
     unit: 'Caja x 12 un. ($1.036 c/u)',
     flavors: 'Cobertura chocolate blanco (68 gr)',
-    description: 'Caja x 12 un. Costo unitario: $1.036 | Sugerido: $1.500.',
+    description: 'Línea bombón premium blanco. Costo unitario: $1.036 | Sugerido al público: $1.500.',
     image: '/products/blanco.png'
   },
   {
@@ -680,7 +680,7 @@ export const products = [
     price: 16560,
     unit: 'Caja x 12 un. ($1.380 c/u)',
     flavors: 'DDL y Americana (110 gr)',
-    description: 'Caja x 12 unidades. Costo por pote: $1.380 | Sugerido: $2.000.',
+    description: 'Caja x 12 potes individuales. Costo unitario: $1.380 | Sugerido al público: $2.000.',
     image: '/products/dame-mas.png'
   },
   {
@@ -691,7 +691,7 @@ export const products = [
     price: 24164,
     unit: 'Caja x 14 un. ($1.726 c/u)',
     flavors: 'Cucurucho menta granizada (80 gr)',
-    description: 'Caja x 14 unidades. Costo: $1.726 c/u | Sugerido: $2.500.',
+    description: 'Caja x 14 cucuruchos. Costo unitario: $1.726 | Sugerido al público: $2.500.',
     image: '/products/cono-menta.png'
   },
   {
@@ -702,7 +702,7 @@ export const products = [
     price: 24164,
     unit: 'Caja x 14 un. ($1.726 c/u)',
     flavors: 'Cucurucho con bocha dulce (80 gr)',
-    description: 'Caja x 14 unidades. Costo: $1.726 c/u | Sugerido: $2.500.',
+    description: 'Caja x 14 cucuruchos. Costo unitario: $1.726 | Sugerido al público: $2.500.',
     image: '/products/cono-bola.png'
   },
   {
@@ -713,7 +713,7 @@ export const products = [
     price: 24852,
     unit: 'Caja x 12 un. ($2.071 c/u)',
     flavors: 'Cono grande con salsa (110 gr)',
-    description: 'Caja x 12 unidades. Costo: $2.071 c/u | Sugerido: $3.000.',
+    description: 'Caja x 12 cucuruchos gigantes. Costo unitario: $2.071 | Sugerido al público: $3.000.',
     image: '/products/cono-flama.png'
   },
   {
@@ -724,7 +724,7 @@ export const products = [
     price: 51696,
     unit: 'Caja x 36 un. ($1.436 c/u)',
     flavors: 'Surtido térmico (180 gr)',
-    description: 'Caja mayorista x 36 potes. Costo unitario: $1.436 | Sugerido: $2.000.',
+    description: 'Caja cerrada con potes térmicos. Costo unitario: $1.436 | Sugerido al público: $2.000.',
     image: '/products/pote.png'
   },
   {
@@ -735,7 +735,7 @@ export const products = [
     price: 33144,
     unit: 'Bulto x 8 cajas ($4.143 c/u)',
     flavors: 'Cada cajita trae 12 bocaditos (120 gr)',
-    description: 'Bulto con 8 cajas para freezer exhibidor. Sugerido x caja: $6.000.',
+    description: 'Bulto con 8 cajitas para freezer exhibidor. Sugerido al público: $6.000 por caja.',
     image: '/products/caja-bocaditos.png'
   },
 
@@ -748,7 +748,7 @@ export const products = [
     price: 17550,
     unit: 'Balde 10 Litros',
     flavors: 'Limón, Frutilla, Naranja',
-    description: 'Línea Fripper/Tropic para gastronomía y heladerías.',
+    description: 'Línea de agua gastronómica para heladerías, eventos y gastronomía.',
     image: '/products/balde-10l.png'
   },
   {
@@ -759,7 +759,7 @@ export const products = [
     price: 23530,
     unit: 'Balde 10 Litros',
     flavors: 'Sabores frutales de alta densidad',
-    description: 'Balde gastronómico de agua calidad premium.',
+    description: 'Balde gastronómico de agua elaborado con pulpa frutal concentrada.',
     image: '/products/balde-10l.png'
   },
   {
@@ -770,7 +770,7 @@ export const products = [
     price: 28340,
     unit: 'Balde 10 Litros',
     flavors: 'Vainilla, Dulce de Leche, Americana, Chocolate',
-    description: 'Cremas tradicionales de alta rotación para eventos y locales.',
+    description: 'Cremas tradicionales de alta rotación para despacho por bocha o eventos.',
     image: '/products/balde-10l.png',
     badge: 'GASTRONOMÍA'
   },
@@ -782,7 +782,7 @@ export const products = [
     price: 34580,
     unit: 'Balde 10 Litros',
     flavors: 'Banana Split, Menta Granizada, Frutilla a la Crema',
-    description: 'Cremas elaboradas con materias primas seleccionadas.',
+    description: 'Cremas saborizadas especiales para servicio gastronómico.',
     image: '/products/balde-10l.png'
   },
   {
@@ -793,7 +793,7 @@ export const products = [
     price: 38610,
     unit: 'Balde 10 Litros',
     flavors: 'Granizado, Chocolate con Almendras, Tramontana',
-    description: 'Helado artesanal con trozos de chocolate, frutos secos y galletitas.',
+    description: 'Cremas heladas con abundantes inclusiones de chocolate, crocante y galletitas.',
     image: '/products/balde-10l.png'
   },
   {
@@ -804,7 +804,7 @@ export const products = [
     price: 43030,
     unit: 'Balde 10 Litros',
     flavors: 'Dulce de Leche Premium, Americana Doble Crema',
-    description: 'Máxima untuosidad y porcentaje graso gastronómico.',
+    description: 'Máxima cremosidad y porcentaje graso para heladería artesanal de primera línea.',
     image: '/products/balde-10l.png'
   },
   {
@@ -815,7 +815,7 @@ export const products = [
     price: 48412,
     unit: 'Balde 10 Litros',
     flavors: 'Chantilly con Frutillas, Tiramisú, Mousse de Limón',
-    description: 'Recetas exclusivas para servicio gastronómico de alta gama.',
+    description: 'Recetas gastronómicas gourmet para cartas de postres de alta gama.',
     image: '/products/balde-10l.png'
   },
   {
@@ -826,7 +826,7 @@ export const products = [
     price: 54600,
     unit: 'Balde 10 Litros',
     flavors: 'Mascarpone con Frutos Rojos, DDL Granizado Especial',
-    description: 'Cremas gourmet con abundantes inclusiones y veteados.',
+    description: 'Cremas de calidad superior con sembrados y veteados abundantes en origen.',
     image: '/products/balde-10l.png',
     badge: 'CALIDAD SUPERIOR'
   },
@@ -840,7 +840,7 @@ export const products = [
     price: 6143,
     unit: 'x balde 2 Litros',
     flavors: 'Sabores clásicos combinados',
-    description: 'Costo mayorista: $6.143 | Sugerido al público: $8.000.',
+    description: 'Balde comercial con manija. Costo mayorista: $6.143 | Sugerido al público: $8.000.',
     image: '/products/palito-cassata.png'
   },
   {
@@ -851,7 +851,7 @@ export const products = [
     price: 8438,
     unit: 'x balde 3 Litros',
     flavors: 'Surtidos clásicos',
-    description: 'Costo mayorista: $8.438 | Sugerido al público: $11.500.',
+    description: 'Formato familiar comercial. Costo mayorista: $8.438 | Sugerido al público: $11.500.',
     image: '/products/balde-fripper.png'
   },
   {
@@ -862,7 +862,7 @@ export const products = [
     price: 8438,
     unit: 'x balde 3 Litros',
     flavors: 'Línea Vento Gelato envasado',
-    description: 'Costo mayorista: $8.438 | Sugerido al público: $11.500.',
+    description: 'Balde 3 gustos de fábrica. Costo mayorista: $8.438 | Sugerido al público: $11.500.',
     image: '/products/balde.png'
   },
   {
@@ -873,7 +873,7 @@ export const products = [
     price: 12083,
     unit: 'x balde 3 Litros (1,5 Kg)',
     flavors: 'Sabores Lomoro envasados de origen',
-    description: 'Costo mayorista: $12.083 | Sugerido al público: $17.500.',
+    description: 'Balde oficial Lomoro con precinto. Costo mayorista: $12.083 | Sugerido al público: $17.500.',
     image: '/products/balde-lomoro.png',
     badge: 'LOMORO OFICIAL'
   },
@@ -885,7 +885,7 @@ export const products = [
     price: 13109,
     unit: 'x balde 5 Litros',
     flavors: 'Cremas combinadas',
-    description: 'Costo mayorista: $13.109 | Sugerido al público: $18.000.',
+    description: 'Balde grande de 5 litros. Costo mayorista: $13.109 | Sugerido al público: $18.000.',
     image: '/products/balde-fripper-5l.png'
   },
   {
@@ -896,7 +896,7 @@ export const products = [
     price: 38480,
     unit: 'x balde 5 Litros',
     flavors: 'Línea especial de alta gama gastronómica',
-    description: 'Costo mayorista: $38.480 | Sugerido al público: $54.000.',
+    description: 'Línea gastronómica gourmet. Costo mayorista: $38.480 | Sugerido al público: $54.000.',
     image: '/products/palito-cassata.png',
     badge: 'GOURMET'
   },
@@ -908,7 +908,7 @@ export const products = [
     price: 4143,
     unit: 'x pote 750 cc (450 gr)',
     flavors: 'Helado al Champagne con Limón',
-    description: 'Costo mayorista: $4.143 | Sugerido al público: $6.000.',
+    description: 'Pote térmico postre. Costo mayorista: $4.143 | Sugerido al público: $6.000.',
     image: '/products/lemon-champ.png'
   },
   {
@@ -919,7 +919,7 @@ export const products = [
     price: 5178,
     unit: 'x pote 750 cc (450 gr)',
     flavors: 'Cremas especiales y dulce de leche repostero',
-    description: 'Costo mayorista: $5.178 | Sugerido al público: $7.500.',
+    description: 'Pote especial decorado. Costo mayorista: $5.178 | Sugerido al público: $7.500.',
     image: '/products/irresistibles.png'
   },
   {
@@ -930,7 +930,7 @@ export const products = [
     price: 5870,
     unit: 'x pote 1 Litro (500 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Costo mayorista: $5.870 | Sugerido al público: $8.500.',
+    description: 'Pote rectangular de 1 litro. Costo mayorista: $5.870 | Sugerido al público: $8.500.',
     image: '/products/cassata-balde.png'
   },
 
@@ -943,7 +943,7 @@ export const products = [
     price: 4833,
     unit: 'Pack x 8 un. ($604 c/u)',
     flavors: 'Crema bañada (34 gr)',
-    description: 'Costo por unidad: $604 | Sugerido por pack: $7.000.',
+    description: 'Pack cerrado x 8. Costo unitario: $604 | Sugerido por pack: $7.000.',
     image: '/products/barrita-helada.png'
   },
   {
@@ -954,7 +954,7 @@ export const products = [
     price: 10357,
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate y maní (70 gr)',
-    description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
+    description: 'Pack cerrado x 8. Costo unitario: $1.295 | Sugerido por pack: $15.000.',
     image: '/products/barrita-crocante.png'
   },
   {
@@ -965,7 +965,7 @@ export const products = [
     price: 10357,
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'DDL y chocolate (70 gr)',
-    description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
+    description: 'Pack cerrado x 8. Costo unitario: $1.295 | Sugerido por pack: $15.000.',
     image: '/products/barrita-mundial.png'
   },
   {
@@ -976,7 +976,7 @@ export const products = [
     price: 10357,
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Pistacho y chocolate (50 gr)',
-    description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
+    description: 'Pack cerrado x 8. Costo unitario: $1.295 | Sugerido por pack: $15.000.',
     image: '/products/barrita-dubai.png',
     badge: 'NOVEDAD'
   },
@@ -988,7 +988,7 @@ export const products = [
     price: 9667,
     unit: 'Pack x 6 un. ($1.611 c/u)',
     flavors: 'Dulce de leche y chocolate negro (80 gr)',
-    description: 'Costo por unidad: $1.611 | Sugerido por pack: $14.000.',
+    description: 'Pack cerrado x 6. Costo unitario: $1.611 | Sugerido por pack: $14.000.',
     image: '/products/alfajores-premium.png',
     badge: 'MÁS VENDIDO'
   },
@@ -1000,7 +1000,7 @@ export const products = [
     price: 12775,
     unit: 'Pack x 8 un. ($1.597 c/u)',
     flavors: 'Crema crocante (80 gr)',
-    description: 'Costo por unidad: $1.597 | Sugerido por pack: $18.500.',
+    description: 'Pack cerrado x 8. Costo unitario: $1.597 | Sugerido por pack: $18.500.',
     image: '/products/alfajor-hit.png'
   },
   {
@@ -1011,7 +1011,7 @@ export const products = [
     price: 9667,
     unit: 'Pack x 6 un. ($1.611 c/u)',
     flavors: 'Sin TACC garantizado (80 gr)',
-    description: 'Costo por unidad: $1.611 | Sugerido por pack: $14.000.',
+    description: 'Pack sellado sin gluten x 6. Costo unitario: $1.611 | Sugerido por pack: $14.000.',
     image: '/products/alfajor-sin-gluten.png',
     badge: 'SIN TACC'
   },
@@ -1023,7 +1023,7 @@ export const products = [
     price: 10357,
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate y crema (80 gr)',
-    description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
+    description: 'Pack postres individuales x 8. Costo unitario: $1.295 | Sugerido por pack: $15.000.',
     image: '/products/bombon-escoces-negro.png'
   },
   {
@@ -1034,7 +1034,7 @@ export const products = [
     price: 10357,
     unit: 'Pack x 8 un. ($1.295 c/u)',
     flavors: 'Chocolate blanco y crema (80 gr)',
-    description: 'Costo por unidad: $1.295 | Sugerido por pack: $15.000.',
+    description: 'Pack postres individuales x 8. Costo unitario: $1.295 | Sugerido por pack: $15.000.',
     image: '/products/bombon-escoces-blanco.png'
   },
   {
@@ -1045,7 +1045,7 @@ export const products = [
     price: 9667,
     unit: 'Pack x 8 un. ($1.208 c/u)',
     flavors: 'Dulce de leche central (80 gr)',
-    description: 'Costo por unidad: $1.208 | Sugerido por pack: $14.000.',
+    description: 'Pack postres individuales x 8. Costo unitario: $1.208 | Sugerido por pack: $14.000.',
     image: '/products/bombon-suizo.png'
   },
   {
@@ -1056,7 +1056,7 @@ export const products = [
     price: 7250,
     unit: 'Pack x 8 un. ($906 c/u)',
     flavors: 'Crema con crocante de almendras (80 gr)',
-    description: 'Costo por unidad: $906 | Sugerido por pack: $10.500.',
+    description: 'Pack etiquetado para reventa x 8. Costo unitario: $906 | Sugerido por pack: $10.500.',
     image: '/products/almendrado.png'
   },
   {
@@ -1067,7 +1067,7 @@ export const products = [
     price: 11738,
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Almendrado clásico (80 gr)',
-    description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
+    description: 'Pack cerrado x 10 unidades. Costo unitario: $1.174 | Sugerido por pack: $17.000.',
     image: '/products/almendrado.png'
   },
   {
@@ -1078,7 +1078,7 @@ export const products = [
     price: 11738,
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Tricolor tradicional (80 gr)',
-    description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
+    description: 'Pack cerrado x 10 unidades. Costo unitario: $1.174 | Sugerido por pack: $17.000.',
     image: '/products/cassata.png'
   },
   {
@@ -1089,7 +1089,7 @@ export const products = [
     price: 11738,
     unit: 'Pack x 10 un. ($1.174 c/u)',
     flavors: 'Limón y coco (80 gr)',
-    description: 'Costo por unidad: $1.174 | Sugerido por pack: $17.000.',
+    description: 'Pack cerrado x 10 unidades. Costo unitario: $1.174 | Sugerido por pack: $17.000.',
     image: '/products/limon-cocado.png'
   },
   {
@@ -1100,7 +1100,7 @@ export const products = [
     price: 7250,
     unit: 'Pack x 8 un. ($906 c/u)',
     flavors: 'Surtido de sabores (80 gr)',
-    description: 'Costo por unidad: $906 | Sugerido por pack: $10.500.',
+    description: 'Pack surtido de postres x 8. Costo unitario: $906 | Sugerido por pack: $10.500.',
     image: '/products/mixto-caja.png'
   },
   {
@@ -1111,7 +1111,7 @@ export const products = [
     price: 7250,
     unit: 'x barra familiar (600 gr)',
     flavors: 'Crema y bizcochuelo',
-    description: 'Costo mayorista: $7.250 | Sugerido al público: $10.500.',
+    description: 'Barra helada familiar. Costo mayorista: $7.250 | Sugerido al público: $10.500.',
     image: '/products/camely.png'
   },
   {
@@ -1122,7 +1122,7 @@ export const products = [
     price: 7250,
     unit: 'x barra familiar (600 gr)',
     flavors: 'Crema con lluvia crocante',
-    description: 'Costo mayorista: $7.250 | Sugerido al público: $10.500.',
+    description: 'Barra helada familiar crocante. Costo mayorista: $7.250 | Sugerido al público: $10.500.',
     image: '/products/barra-crocante.png'
   },
   {
@@ -1133,7 +1133,7 @@ export const products = [
     price: 11393,
     unit: 'x unidad entera (1000 gr)',
     flavors: 'Dulce de leche y americana',
-    description: 'Costo mayorista: $11.393 | Sugerido al público: $16.500.',
+    description: 'Torta helada entera para reventa. Costo mayorista: $11.393 | Sugerido al público: $16.500.',
     image: '/products/tortas.png'
   },
   {
@@ -1144,7 +1144,7 @@ export const products = [
     price: 20715,
     unit: 'x unidad entera (1000 gr)',
     flavors: 'Cremas gourmet decoradas',
-    description: 'Costo mayorista: $20.715 | Sugerido al público: $30.000.',
+    description: 'Torta helada artesanal gourmet. Costo mayorista: $20.715 | Sugerido al público: $30.000.',
     image: '/products/tortas.png',
     badge: 'GOURMET'
   }
