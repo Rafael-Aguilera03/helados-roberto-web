@@ -23,7 +23,7 @@ export default function FloatingWA({ phone = "5492617035400" }) {
   }, []);
 
   const defaultMessage = encodeURIComponent(
-    'Hola Roberto! Quería consultar disponibilidad de productos y lista de precios.'
+    '¡Hola Roberto!, vi el catálogo online y me interesa realizar un pedido.'
   );
   const waUrl = `https://wa.me/${phone}?text=${defaultMessage}`;
 
