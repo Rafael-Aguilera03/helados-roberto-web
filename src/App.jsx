@@ -9,6 +9,7 @@ import InfoSection from './components/InfoSection';
 import FloatingWA from './components/FloatingWA';
 import Footer from './components/Footer';
 import { products } from './data/products';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [mode, setMode] = useState('menor');
@@ -106,6 +107,7 @@ export default function App() {
 
       <Footer />
       <FloatingWA phone={whatsappNumber} />
+      <Analytics />
     </div>
   );
 }
