@@ -1,16 +1,66 @@
-# React + Vite
+#  Helados Roberto — Catálogo Web & Pedidos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plataforma web responsive y catálogo digital interactivo desarrollada para **Helados Roberto**, distribuidora de helados Lomoro. Nace como una solución concreta para eliminar las fricciones operativas y los tiempos muertos en la atención al cliente, evitando el envío manual de listas de precios, fotos y descripciones por chat. La web permite a los usuarios autogestionar su consulta en segundos y disparar pedidos directos vía WhatsApp listos para despachar.
 
-Currently, two official plugins are available:
+**Sitio en vivo:** [heladeria-web-inky.vercel.app](https://heladeria-web-inky.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+##  Problema de Negocio y Solución
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Tiempos de espera reducidos:** Elimina la demora que implicaba responder manualmente por WhatsApp con PDFs, fotos pesadas o mensajes largos para consultar precios y disponibilidad.
+* **Autonomía del cliente:** Toda la información (precios minoristas/mayoristas, formatos, presentaciones y sabores) queda centralizada y accesible las 24 horas desde cualquier dispositivo.
+* **Mensajes preestructurados:** Al armar el pedido o consultar desde la web, WhatsApp se abre con un texto claro y detallado, ahorrando idas y vueltas entre vendedor y cliente.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Características
+
+* **Modo Minorista / Mayorista:** Alternador dinámico que adapta la lista de productos y precios según el tipo de cliente.
+* **Filtros por Categoría:** Navegación por tabs para explorar baldes, potes, palitos y especialidades.
+* **Integración con WhatsApp:** Disparo directo de consultas y pedidos formateados sin fricción.
+* **Diseño Mobile-First:** Experiencia rápida y fluida pensada para el tráfico habitual proveniente de links en redes o estados.
+* **Analíticas Cookieless:** Métricas anónimas en tiempo real mediante Vercel Web Analytics, sin almacenar datos personales ni requerir banners invasivos.
+* **Open Graph Optimizado:** Vista previa atractiva configurada al compartir el enlace en WhatsApp o redes.
+
+---
+
+##  Stack Tecnológico
+
+* **Frontend:** React + Vite
+* **Estilos:** Tailwind CSS
+* **Iconos:** Lucide React
+* **Hosting & CI/CD:** Vercel
+* **Control de versiones:** Git & GitHub
+
+---
+
+##  Estructura del Proyecto
+
+├── public/              # Archivos estáticos, imágenes de productos y favicon
+├── src/
+│   ├── assets/          # Recursos multimedia
+│   ├── components/      # Componentes reutilizables (Header, ProductCard, etc.)
+│   ├── data/            # Catálogo de productos y datos estáticos (products.js)
+│   ├── App.jsx          # Componente raíz con layout y lógica principal
+│   ├── main.jsx         # Punto de entrada de la aplicación
+│   └── index.css        # Configuración base de estilos con Tailwind
+├── vercel.json          # Configuración de cabeceras de seguridad y routing
+├── package.json
+└── vite.config.js
+
+---
+
+##  Desarrollo y Mantenimiento
+
+Comandos para la gestión y actualización interna del catálogo:
+
+* Instalar dependencias: `npm install`
+* Servidor de desarrollo local: `npm run dev`
+* Compilación para producción: `npm run build`
+
+---
+
+##  Propiedad y Uso
+
+Proyecto desarrollado a medida para **Helados Roberto**. Código y recursos multimedia reservados para uso comercial del negocio. Mostrado públicamente con fines exclusivos de demostración técnica y portfolio profesional.
