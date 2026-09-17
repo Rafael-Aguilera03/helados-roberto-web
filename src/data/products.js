@@ -12,7 +12,7 @@ export const products = [
     mode: 'menor',
     price: 1000,
     unit: 'x unidad (60 gr)',
-    flavors: 'Frutilla, Naranja, Limón',
+    flavors: 'Frutilla, Naranja, Limón, Uva',
     description: 'Palito de agua tradicional, refrescante y liviano.',
     image: '/products/palitos-de-agua.png',
     badge: 'MÁS VENDIDO'
@@ -24,8 +24,8 @@ export const products = [
     mode: 'menor',
     price: 1000,
     unit: 'x unidad (60 gr)',
-    flavors: 'Surtido frutal',
-    description: 'Palito de agua frutal para chicos, fortificado con Vitamina C.',
+    flavors: 'Combinado',
+    description: 'Palito de agua frutal combinado, fortificado con Vitamina C.',
     image: '/products/fortachon.png',
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     price: 1500,
     unit: 'x unidad (45 gr)',
     flavors: 'Crema sabor banana con punta de chocolate',
-    description: 'Clásico palito infantil de crema con baño en la punta.',
+    description: 'Clásico palito de crema con baño de chocolate en la punta.',
     image: '/products/bana-bana.png',
   },
   {
@@ -46,7 +46,7 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Vainilla, Frutilla a la crema, Dulce de Leche',
+    flavors: 'Granizado, Dulce de Leche Granizado, Chocolate',
     description: 'Palito cremoso clásico de textura suave.',
     image: '/products/palitos-crema.png'
   },
@@ -57,8 +57,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Combinación frutal y crema',
-    description: 'Palito bicolor de impulso que combina agua y crema.',
+    flavors: 'Combinado',
+    description: 'Palito bicolor.',
     image: '/products/kamikaze.png'
   },
   {
@@ -68,8 +68,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (45 gr)',
-    flavors: 'Crema saborizada',
-    description: 'Palito de crema con divertida forma de carita infantil.',
+    flavors: 'Crema y Frutilla, Crema y Dulce de Leche',
+    description: 'Palito de crema con divertida forma de carita.',
     image: '/products/tiki.png'
   },
   {
@@ -79,8 +79,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (50 gr)',
-    flavors: 'Centro frutal con cobertura de chocolate',
-    description: 'Palito de fruta recubierto con crocante baño de repostería.',
+    flavors: 'Centro cremoso con cobertura frutal',
+    description: 'Palito de cremoso recubierto con helado de agua.',
     image: '/products/bombon-frutal.png'
   },
   {
@@ -90,8 +90,8 @@ export const products = [
     mode: 'menor',
     price: 1500,
     unit: 'x unidad (50 gr)',
-    flavors: 'Crema Americana con Chocolate',
-    description: 'El clásico de siempre: suave crema americana con cobertura de chocolate semiamargo.',
+    flavors: 'Crema Americana con cobertura de Chocolate',
+    description: 'Suave crema americana con cobertura de chocolate.',
     image: '/products/bombon-clasico.png',
     badge: 'CLÁSICO'
   },
@@ -103,7 +103,7 @@ export const products = [
     price: 1500,
     unit: 'x unidad (60 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Palito helado tricolor con la clásica combinación de tres gustos.',
+    description: 'Palito helado tricolor con la clásica combinación mixta.',
     image: '/products/palito-cassata.png'
   },
   {
@@ -113,8 +113,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (68 gr)',
-    flavors: 'Crema bañada con maní tostado',
-    description: 'Palito bombón premium con gruesa cobertura de chocolate y trocitos de maní crocante.',
+    flavors: 'Crema, cobertura chocolate y pedazos de maní',
+    description: 'Palito bombón premium con cobertura de chocolate y trocitos de maní crocante.',
     image: '/products/crocky.png',
     badge: 'PREMIUM'
   },
@@ -125,8 +125,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (68 gr)',
-    flavors: 'Crema Americana y Chocolate Negro',
-    description: 'Palito de crema premium con capa extra de chocolate semiamargo.',
+    flavors: 'Crema de Dulce de Leche, cubertura de Chocolate',
+    description: 'Palito bombón premium con crema de Dulce de Leche y cobertura de chocolate.',
     image: '/products/max.png',
     badge: 'PREMIUM'
   },
@@ -137,7 +137,7 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (68 gr)',
-    flavors: 'Crema Americana y Chocolate Blanco',
+    flavors: 'Crema de Chocolate, coberura Chocolate Blanco',
     description: 'Palito de crema premium recubierto con baño de chocolate blanco.',
     image: '/products/blanco.png',
     badge: 'PREMIUM'
@@ -149,8 +149,8 @@ export const products = [
     mode: 'menor',
     price: 2500,
     unit: 'x unidad (80 gr)',
-    flavors: 'Menta granizada con chocolate',
-    description: 'Cucurucho crocante relleno de helado de menta granizada y cobertura de chocolate.',
+    flavors: 'Menta granizada, cobertura chocolate',
+    description: 'Cucurucho con bocha de helado menta granizada y cobertura de chocolate.',
     image: '/products/cono-menta.png'
   },
   {
@@ -161,7 +161,7 @@ export const products = [
     price: 2500,
     unit: 'x unidad (80 gr)',
     flavors: 'Dulce de Leche y Crema',
-    description: 'Cucurucho crocante coronado con bocha de crema helada y baño dulce.',
+    description: 'Cucurucho con bocha de crema helada y cobertura de chocolate.',
     image: '/products/cono-bola.png'
   },
   {
@@ -171,8 +171,8 @@ export const products = [
     mode: 'menor',
     price: 3000,
     unit: 'x unidad (110 gr)',
-    flavors: 'Chocolates combinados y salsa',
-    description: 'Cucurucho de gran tamaño con abundante helado cremoso y corazón de salsa.',
+    flavors: 'Crema Americana, Crema Dulce de Leche, cobertura Chocolate',
+    description: 'Cucurucho con bocha de helado mixta y corazón de salsa.',
     image: '/products/cono-flama.png',
     badge: 'TAMAÑO XL'
   },
@@ -185,8 +185,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (110 gr)',
-    flavors: 'Dulce de Leche y Crema Americana',
-    description: 'Vasito individual clásico, práctico para postre o merienda.',
+    flavors: 'Crema Americana y Frutilla',
+    description: 'Vasito individual clásico.',
     image: '/products/dame-mas.png'
   },
   {
@@ -196,19 +196,19 @@ export const products = [
     mode: 'menor',
     price: 3000,
     unit: 'x unidad (180 gr)',
-    flavors: 'Sabores surtidos a elección',
-    description: 'Pote térmico individual que mantiene la temperatura perfecta del helado.',
+    flavors: 'Americana Dulce de Leche Chocolate, Chocolate Vainilla Frutilla, ',
+    description: 'Pote térmico individual.',
     image: '/products/pote.png'
   },
   {
     id: 'menor-bocaditos-120',
-    name: 'Bocaditos Helados x 12 un.',
+    name: 'Bocaditos Helados.',
     category: 'potes-bocaditos',
     mode: 'menor',
     price: 6000,
     unit: 'caja 12 bocaditos (120 gr)',
-    flavors: 'Crema americana bañada en chocolate',
-    description: 'Caja de bocaditos helados individuales para picar o compartir.',
+    flavors: 'Helado de Crema bañado en chocolate',
+    description: 'Caja de bocaditos helados para compartir.',
     image: '/products/bocaditos.png',
     badge: 'PARA COMPARTIR'
   },
@@ -219,8 +219,8 @@ export const products = [
     mode: 'menor',
     price: 6000,
     unit: 'pote 750 cc (450 gr)',
-    flavors: 'Limón al Champagne',
-    description: 'Especialidad cremosa y refrescante, ideal como postre de sobremesa.',
+    flavors: 'Limón',
+    description: 'Helado de Limón para preparar tragos.',
     image: '/products/lemon-champ.png'
   },
   {
@@ -230,8 +230,8 @@ export const products = [
     mode: 'menor',
     price: 6000,
     unit: 'pote 750 cc (450 gr)',
-    flavors: 'Cremas especiales con salsas y sembrados',
-    description: 'Postre gourmet en pote con generosas capas de salsa y trocitos dulces.',
+    flavors: 'Cookies and Cream, Chocolate, Cereza, Banana Split',
+    description: 'Pote Helado con cremas especiales.',
     image: '/products/irresistibles.png',
     badge: 'ESPECIAL'
   },
@@ -243,7 +243,7 @@ export const products = [
     price: 8500,
     unit: 'pote 1 Litro (500 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Pote familiar de tres gustos tradicionales para compartir en la mesa.',
+    description: 'Pote de tres gustos tradicionales para compartir.',
     image: '/products/cassata-balde.png'
   },
 
@@ -256,7 +256,7 @@ export const products = [
     price: 2000,
     unit: 'pack individual (34 gr)',
     flavors: 'Crema y baño de chocolate',
-    description: 'Snack helado crocante y liviano de consumo rápido.',
+    description: 'Snack helado de consumo rápido.',
     image: '/products/barrita-helada.png'
   },
   {
@@ -266,8 +266,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (70 gr)',
-    flavors: 'Chocolate con maní crocante',
-    description: 'Barra rellena de crema helada con crocante baño de repostería.',
+    flavors: 'Crema, cobertura de Chocolate con maní crocante',
+    description: 'Snack helado de consumo rápido.',
     image: '/products/barrita-crocante.png'
   },
   {
@@ -277,9 +277,10 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (70 gr)',
-    flavors: 'Dulce de leche y chocolate',
-    description: 'Edición especial rellena de crema helada y dulce de leche repostero.',
-    image: '/products/barrita-mundial.png'
+    flavors: 'Crema, cobertura de Chocolate con maní crocante',
+    description: 'Snack helado edición especial de consumo rápido.',
+    image: '/products/barrita-mundial.png',
+    badge: 'EDICIÓN ESPECIAL'
   },
   {
     id: 'menor-barra-dubai',
@@ -288,8 +289,8 @@ export const products = [
     mode: 'menor',
     price: 2000,
     unit: 'x unidad (50 gr)',
-    flavors: 'Pistacho y chocolate semiamargo',
-    description: 'Barra helada inspirada en sabores de pistacho con fina terminación de cacao.',
+    flavors: 'Chocolate, Salsa de Pistacho, cobertura chocolate',
+    description: 'Snack helado edición especial de consumo rápido.',
     image: '/products/barrita-dubai.png',
     badge: 'TENDENCIA'
   },
@@ -300,8 +301,8 @@ export const products = [
     mode: 'menor',
     price: 3000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Dulce de leche y cobertura de chocolate',
-    description: 'Galleta suave rellena de abundante helado de dulce de leche con baño de chocolate.',
+    flavors: 'Chocolate, Dulce de leche y cobertura de chocolate',
+    description: 'Alfajor helado con una tapa de galleta y centro de Dulce de Leche.',
     image: '/products/alfajores-premium.png',
     badge: 'RECOMENDADO'
   },
@@ -313,7 +314,7 @@ export const products = [
     price: 18500,
     unit: 'x unidad (80 gr)',
     flavors: 'Crema helada con baño crocante',
-    description: 'Alfajor helado de masa suave con densa capa crocante exterior.',
+    description: 'Alfajor de crema de chocolate con trozos de maní, base de galleta, relleno de dulce de leche.',
     image: '/products/alfajor-hit.png'
   },
   {
@@ -324,7 +325,7 @@ export const products = [
     price: 14000,
     unit: 'x unidad (80 gr)',
     flavors: 'Dulce de leche apto celíacos',
-    description: 'Alfajor helado libre de gluten, certificado y envasado herméticamente.',
+    description: 'Alfajor helado libre de gluten.',
     image: '/products/alfajor-sin-gluten.png',
     badge: 'SIN TACC'
   },
@@ -335,8 +336,8 @@ export const products = [
     mode: 'menor',
     price: 15000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Crema americana, dulce de leche y crocante',
-    description: 'Postre individual de crema con corazón dulce, bañado en chocolate y crocante.',
+    flavors: 'Crema americana, Chocolate, dulce de leche, cobertura Chocolate',
+    description: 'Postre individual de crema americana y chocolate con un corazón de dulce de leche, cubierto con baño de Chocolate.',
     image: '/products/bombon-escoces-negro.png'
   },
   {
@@ -346,8 +347,8 @@ export const products = [
     mode: 'menor',
     price: 15000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Crema con baño de chocolate blanco',
-    description: 'Versión del clásico bombón con dulce interior y cobertura de chocolate blanco.',
+    flavors: 'Crema americana, Chocolate, dulce de leche, cobertura Chocolate Blanco',
+    description: 'Postre individual de crema americana y chocolate con un corazón de dulce de leche, cubierto con baño de Chocolate Blanco.',
     image: '/products/bombon-escoces-blanco.png'
   },
   {
@@ -357,8 +358,8 @@ export const products = [
     mode: 'menor',
     price: 14000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Dulce de leche y chocolate',
-    description: 'Postre helado individual con corazón de dulce de leche y baño de cacao.',
+    flavors: 'Dulce de leche, Crema Americana, cobertura chocolate',
+    description: 'Postre helado individual.',
     image: '/products/bombon-suizo.png'
   },
   {
@@ -368,8 +369,8 @@ export const products = [
     mode: 'menor',
     price: 17000,
     unit: 'x unidad (80 gr)',
-    flavors: 'Crema helada con almendras tostadas',
-    description: 'Porción clásica de crema helada cubierta con abundantes almendras tostadas picadas.',
+    flavors: 'Crema helada y Almendras',
+    description: 'Postre de crema helada cubierta con almendras picadas.',
     image: '/products/almendrado.png'
   },
   {
@@ -380,7 +381,7 @@ export const products = [
     price: 17000,
     unit: 'x unidad (80 gr)',
     flavors: 'Frutilla, Vainilla y Chocolate',
-    description: 'Corte tradicional tricolor para servir como postre de sobremesa.',
+    description: 'Postre tradicional tricolor.',
     image: '/products/cassata.png'
   },
   {
@@ -391,7 +392,7 @@ export const products = [
     price: 17000,
     unit: 'x unidad (80 gr)',
     flavors: 'Crema de limón y coco rallado',
-    description: 'Postre helado individual con el contraste cítrico del limón y la suavidad del coco.',
+    description: 'Postre helado individual de Limón y Coco rallado.',
     image: '/products/limon-cocado.png'
   },
   {
@@ -401,8 +402,8 @@ export const products = [
     mode: 'menor',
     price: 10500,
     unit: 'barra familiar (600 gr)',
-    flavors: 'Crema, dulce de leche y bizcochuelo',
-    description: 'Barra helada tipo postre casero, lista para cortar en porciones y compartir.',
+    flavors: 'Crema Helada, cobertura y decoración',
+    description: 'Barra helada tipo postre, lista para cortar en porciones y compartir.',
     image: '/products/camely.png'
   },
   {
@@ -412,8 +413,8 @@ export const products = [
     mode: 'menor',
     price: 10500,
     unit: 'barra familiar (600 gr)',
-    flavors: 'Crema con lluvia crocante',
-    description: 'Barra de helado cremoso terminada con lluvia de crocante dulce.',
+    flavors: 'Crema Helada, cobertura y decoración',
+    description: 'Barra helada tipo postre, lista para cortar en porciones y compartir..',
     image: '/products/barra-crocante.png'
   },
   {
@@ -423,9 +424,10 @@ export const products = [
     mode: 'menor',
     price: 16500,
     unit: 'entera (1000 gr / 1 Kg)',
-    flavors: 'Dulce de leche y americana',
-    description: 'Torta helada rendidora de dos sabores, perfecta para festejos y reuniones.',
-    image: '/products/tortas.png'
+    flavors: 'crema Americana',
+    description: 'Torta helada, para festejos y reuniones.',
+    image: '/products/tortas.png',
+    badge: 'FIESTAS'
   },
   {
     id: 'menor-torta-premium',
@@ -435,7 +437,7 @@ export const products = [
     price: 30000,
     unit: 'entera (1000 gr / 1 Kg)',
     flavors: 'Cremas especiales decoradas con salsas',
-    description: 'Torta helada artesanal con terminación gourmet para ocasiones especiales.',
+    description: 'Torta helada premium, para festejos y reuniones.',
     image: '/products/tortas.png',
     badge: 'FIESTAS'
   },
@@ -449,7 +451,7 @@ export const products = [
     price: 8000,
     unit: 'balde 2 Litros',
     flavors: 'Sabores clásicos combinados',
-    description: 'Balde familiar práctico con manija, tamaño justo para el freezer del hogar.',
+    description: 'Balde de helado familiar práctico.',
     image: '/products/balde.png'
   },
   {
@@ -459,8 +461,8 @@ export const products = [
     mode: 'menor',
     price: 11500,
     unit: 'balde 3 Litros',
-    flavors: 'Dulce de Leche, Granizado, Frutilla',
-    description: 'Balde de tres sabores con excelente rendimiento familiar.',
+    flavors: 'Sabores clásicos combinados',
+    description: 'Balde de helado familiar práctico.',
     image: '/products/balde-fripper.png',
     badge: 'MÁS ELEGIDO'
   },
@@ -471,8 +473,8 @@ export const products = [
     mode: 'menor',
     price: 11500,
     unit: 'balde 3 Litros',
-    flavors: 'Cereza, Dulce de Leche, Chocolate',
-    description: 'Helado cremoso envasado de origen con combinaciones clásicas.',
+    flavors: 'Sabores clásicos combinados',
+    description: 'Balde de helado familiar práctico.',
     image: '/products/balde.png'
   },
   {
@@ -482,8 +484,8 @@ export const products = [
     mode: 'menor',
     price: 17500,
     unit: 'balde 3 Litros (1,5 Kg)',
-    flavors: 'Línea Clásica y Especiales Lomoro',
-    description: 'Calidad tradicional Lomoro envasada en fábrica con precinto de seguridad.',
+    flavors: 'Sabores clásicos combinados',
+    description: 'Balde de helado familiar práctico.',
     image: '/products/balde-lomoro.png',
     badge: 'CALIDAD LOMORO'
   },
@@ -494,8 +496,8 @@ export const products = [
     mode: 'menor',
     price: 18000,
     unit: 'balde 5 Litros',
-    flavors: 'Sabores combinados a elección',
-    description: 'Formato extra grande de máximo rendimiento para fiestas y reuniones.',
+    flavors: 'Sabores combinados',
+    description: 'Balde de helado familiar práctico.',
     image: '/products/balde-fripper-5l.png'
   },
 
