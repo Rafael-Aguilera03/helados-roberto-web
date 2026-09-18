@@ -68,7 +68,7 @@ export default function ProductCard({ product, index = 0 }) {
           </span>
         </div>
 
-        {/* Título y detalles */}
+        {/* Título y unidad */}
         <h3 className="font-bold text-slate-900 text-base leading-snug">
           {product.name}
         </h3>
@@ -79,25 +79,28 @@ export default function ProductCard({ product, index = 0 }) {
           </p>
         )}
 
-        {product.flavors && (
-          <p className="text-xs text-slate-500 mt-1">
-            {product.flavors}
-          </p>
-        )}
-
+        {/* Descripción general */}
         {product.description && (
           <p className="text-xs text-slate-500 mt-2 leading-relaxed">
             {product.description}
           </p>
         )}
+
+        {/* Sabores mediante contraste tipográfico */}
+        {product.flavors && (
+          <p className="text-xs text-slate-700 mt-2 leading-snug">
+            <span className="font-semibold text-slate-900">Sabores: </span>
+            {product.flavors}
+          </p>
+        )}
       </div>
 
       {/* Pie de precio */}
-      <div className="mt-5 pt-3 border-t border-slate-100 flex items-baseline justify-between">
-        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+      <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+        <span className="px-2 py-0.5 rounded-md bg-sky-50 border border-sky-200/60 text-[11px] font-black uppercase tracking-wider text-sky-700">
           Precio
         </span>
-        <span className="text-xl font-black text-slate-900">
+        <span className="text-xl font-black text-slate-900 tracking-tight">
           {formattedPrice}
         </span>
       </div>
