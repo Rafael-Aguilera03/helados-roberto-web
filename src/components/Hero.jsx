@@ -15,7 +15,7 @@ export default function Hero() {
       </h2>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
-        Distribución independiente con años de experiencia abasteciendo a familias y comercios locales. Revisá nuestros más de 50 productos abajo ↓
+        Distribución independiente con años de experiencia abasteciendo a familias y comercios locales. Descubrí toda nuestra variedad en helados abajo ↓
       </p>
     </section>
   );
