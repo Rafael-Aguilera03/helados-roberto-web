@@ -43,7 +43,8 @@ export default function App() {
     'packs-postres',
   ];
 
-  const modeProducts = products.filter((p) => p.mode === mode);
+  // Filtro por el modo seleccionado y únicamente productos con stock/activos
+  const modeProducts = products.filter((p) => p.mode === mode && p.isAvailable);
 
   // Obtener categorías únicas presentes en el modo actual y ordenarlas según categoryOrder
   const uniqueCategories = Array.from(new Set(modeProducts.map((p) => p.category)));
