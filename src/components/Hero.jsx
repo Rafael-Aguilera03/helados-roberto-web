@@ -11,7 +11,7 @@ export default function Hero() {
 
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-5">
         Venta y distribución de helados Lomoro, <br className="hidden sm:inline" />
-        <span className="text-sky-700">calidad y precio garantizado.</span>
+        <span className="text-sky-700">calidad y precios garantizados.</span>
       </h2>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
