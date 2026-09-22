@@ -1227,12 +1227,12 @@ export const products = [
   },
   {
     id: 'mayor-torta-economica',
-    name: 'Torta Helada Económica 1 Kg (x unidad)',
+    name: 'Torta Helada 1 Kg (x unidad)',
     category: 'packs-postres',
     mode: 'mayor',
     price: 11393,
     unit: 'x unidad entera (1000 gr)',
-    flavors: 'Crema Americana',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Torta helada, para festejos y reuniones.',
     image: '/products/tortas.png',
     badge: 'FIESTAS',
@@ -1245,10 +1245,10 @@ export const products = [
     mode: 'mayor',
     price: 20715,
     unit: 'x unidad entera (1000 gr)',
-    flavors: 'Cremas especiales decoradas con salsas',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Torta helada premium, para festejos y reuniones.',
     image: '/products/tortas.png',
     badge: 'GOURMET',
-    isAvailable: true
+    isAvailable: false
   }
 ];
