@@ -455,12 +455,12 @@ export const products = [
   },
   {
     id: 'menor-torta-economica',
-    name: 'Torta Helada Económica',
+    name: 'Torta Helada',
     category: 'postres-alfajores',
     mode: 'menor',
     price: 12000,
     unit: 'entera (1000 gr / 1 Kg)',
-    flavors: 'Crema Americana',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Torta helada, para festejos y reuniones.',
     image: '/products/tortas.png',
     badge: 'FIESTAS',
@@ -477,7 +477,7 @@ export const products = [
     description: 'Torta helada premium, para festejos y reuniones.',
     image: '/products/tortas.png',
     badge: 'FIESTAS',
-    isAvailable: true
+    isAvailable: false
   },
 
   // --- 4. Baldes Familiares ---
