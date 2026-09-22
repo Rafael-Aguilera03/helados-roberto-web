@@ -559,7 +559,7 @@ export const products = [
     unit: 'Caja x 20 un. ($415 c/u)',
     flavors: 'Frutilla, Naranja, Limón, Uva',
     description: 'Palito de agua tradicional, refrescante y liviano.',
-    image: '/products/caja-surtidos-agua.png',
+    image: '/products/caja-refresco.png',
     isAvailable: true
   },
   {
