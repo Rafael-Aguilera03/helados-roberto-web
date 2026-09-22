@@ -814,7 +814,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Línea de agua gastronómica para heladerías, eventos y gastronomía.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-agua.png',
     isAvailable: true
   },
   {
@@ -826,7 +826,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Balde gastronómico de agua elaborado con pulpa frutal concentrada.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-agua.png',
     isAvailable: true
   },
   {
@@ -838,7 +838,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas tradicionales de alta rotación para despacho por bocha o eventos.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-crema.png',
     badge: 'GASTRONOMÍA',
     isAvailable: true
   },
@@ -851,7 +851,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas saborizadas especiales para servicio gastronómico.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-especial.png',
     isAvailable: true
   },
   {
@@ -863,7 +863,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas heladas con abundantes inclusiones de chocolate, crocante y galletitas.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-sembrado.png',
     isAvailable: true
   },
   {
@@ -875,7 +875,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Máxima cremosidad y porcentaje graso para heladería artesanal de primera línea.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-crema.png',
     isAvailable: true
   },
   {
@@ -887,7 +887,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Recetas para cartas de postres de alta gama.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-especial.png',
     isAvailable: true
   },
   {
@@ -899,7 +899,7 @@ export const products = [
     unit: 'Balde 10 Litros',
     flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas de calidad superior con sembrados y veteados abundantes en origen.',
-    image: '/products/balde-10l.png',
+    image: '/products/balde-10l-sembrado.png',
     badge: 'CALIDAD SUPERIOR',
     isAvailable: true
   },
