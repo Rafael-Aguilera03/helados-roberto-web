@@ -812,7 +812,7 @@ export const products = [
     mode: 'mayor',
     price: 17550,
     unit: 'Balde 10 Litros',
-    flavors: 'Limón, Frutilla, Naranja',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Línea de agua gastronómica para heladerías, eventos y gastronomía.',
     image: '/products/balde-10l.png',
     isAvailable: true
@@ -824,7 +824,7 @@ export const products = [
     mode: 'mayor',
     price: 23530,
     unit: 'Balde 10 Litros',
-    flavors: 'Sabores frutales de alta densidad',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Balde gastronómico de agua elaborado con pulpa frutal concentrada.',
     image: '/products/balde-10l.png',
     isAvailable: true
@@ -836,7 +836,7 @@ export const products = [
     mode: 'mayor',
     price: 28340,
     unit: 'Balde 10 Litros',
-    flavors: 'Vainilla, Dulce de Leche, Americana, Chocolate',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas tradicionales de alta rotación para despacho por bocha o eventos.',
     image: '/products/balde-10l.png',
     badge: 'GASTRONOMÍA',
@@ -849,7 +849,7 @@ export const products = [
     mode: 'mayor',
     price: 34580,
     unit: 'Balde 10 Litros',
-    flavors: 'Banana Split, Menta Granizada, Frutilla a la Crema',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas saborizadas especiales para servicio gastronómico.',
     image: '/products/balde-10l.png',
     isAvailable: true
@@ -861,7 +861,7 @@ export const products = [
     mode: 'mayor',
     price: 38610,
     unit: 'Balde 10 Litros',
-    flavors: 'Granizado, Chocolate con Almendras, Tramontana',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas heladas con abundantes inclusiones de chocolate, crocante y galletitas.',
     image: '/products/balde-10l.png',
     isAvailable: true
@@ -873,7 +873,7 @@ export const products = [
     mode: 'mayor',
     price: 43030,
     unit: 'Balde 10 Litros',
-    flavors: 'Dulce de Leche Premium, Americana Doble Crema',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Máxima cremosidad y porcentaje graso para heladería artesanal de primera línea.',
     image: '/products/balde-10l.png',
     isAvailable: true
@@ -885,8 +885,8 @@ export const products = [
     mode: 'mayor',
     price: 48412,
     unit: 'Balde 10 Litros',
-    flavors: 'Chantilly con Frutillas, Tiramisú, Mousse de Limón',
-    description: 'Recetas gastronómicas gourmet para cartas de postres de alta gama.',
+    flavors: 'Consultar disponibilidad de sabores',
+    description: 'Recetas para cartas de postres de alta gama.',
     image: '/products/balde-10l.png',
     isAvailable: true
   },
@@ -897,7 +897,7 @@ export const products = [
     mode: 'mayor',
     price: 54600,
     unit: 'Balde 10 Litros',
-    flavors: 'Mascarpone con Frutos Rojos, DDL Granizado Especial',
+    flavors: 'Consultar disponibilidad de sabores',
     description: 'Cremas de calidad superior con sembrados y veteados abundantes en origen.',
     image: '/products/balde-10l.png',
     badge: 'CALIDAD SUPERIOR',
