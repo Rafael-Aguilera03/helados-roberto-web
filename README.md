@@ -2,7 +2,7 @@
 
 Plataforma web responsive y catálogo digital interactivo desarrollada para **Helados Roberto**, distribuidora de helados Lomoro. Nace como una solución concreta para eliminar las fricciones operativas y los tiempos muertos en la atención al cliente, evitando el envío manual de listas de precios, fotos y descripciones por chat. La web permite a los usuarios autogestionar su consulta en segundos y disparar pedidos directos vía WhatsApp listos para despachar.
 
-**Sitio en vivo:** [heladeria-web-inky.vercel.app](https://helados-roberto.vercel.app)
+**Sitio en vivo:** [https://helados-roberto.vercel.app](https://helados-roberto.vercel.app)
 
 ---
 
