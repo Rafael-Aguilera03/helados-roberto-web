@@ -212,7 +212,7 @@ export const products = [
     mode: 'menor',
     price: 3000,
     unit: 'x unidad (180 gr)',
-    flavors: 'Americana Dulce de Leche Chocolate, Chocolate Vainilla Frutilla',
+    flavors: 'Granizado Cereza Dulce de Leche, Banana Split Americana Dulce de Leche, Chocolate Vainilla Frutilla, Limon Chocolate Frutilla',
     description: 'Pote térmico individual.',
     image: '/products/pote.png',
     isAvailable: true
@@ -786,7 +786,7 @@ export const products = [
     mode: 'mayor',
     price: 51696,
     unit: 'Caja x 36 un. ($1.436 c/u)',
-    flavors: 'Americana Dulce de Leche Chocolate, Chocolate Vainilla Frutilla',
+    flavors: 'Granizado Cereza Dulce de Leche, Banana Split Americana Dulce de Leche, Chocolate Vainilla Frutilla, Limon Chocolate Frutilla',
     description: 'Pote térmico individual en caja cerrada x 36.',
     image: '/products/pote.png',
     isAvailable: true
