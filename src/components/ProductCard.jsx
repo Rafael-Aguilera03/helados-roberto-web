@@ -22,11 +22,15 @@ export default function ProductCard({ product, index = 0 }) {
     return () => observer.disconnect();
   }, []);
 
-  const formattedPrice = new Intl.NumberFormat('es-AR', {
-    style: 'currency',
-    currency: 'ARS',
-    maximumFractionDigits: 0,
-  }).format(product.price);
+  const isNumericPrice = typeof product.price === 'number';
+
+  const formattedPrice = isNumericPrice
+    ? new Intl.NumberFormat('es-AR', {
+        style: 'currency',
+        currency: 'ARS',
+        maximumFractionDigits: 0,
+      }).format(product.price)
+    : product.price;
 
   // Un escalonado suave por fila con tope de 180ms
   const staggeredDelay = `${(index % 3) * 80}ms`;
@@ -96,11 +100,15 @@ export default function ProductCard({ product, index = 0 }) {
       </div>
 
       {/* Pie de precio */}
-      <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-        <span className="px-2 py-0.5 rounded-md bg-sky-50 border border-sky-200/60 text-[11px] font-black uppercase tracking-wider text-sky-700">
+      <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+        <span className="px-2 py-0.5 rounded-md bg-sky-50 border border-sky-200/60 text-[11px] font-black uppercase tracking-wider text-sky-700 shrink-0">
           Precio
         </span>
-        <span className="text-xl font-black text-slate-900 tracking-tight">
+        <span
+          className={`font-black tracking-tight text-right text-slate-900 ${
+            isNumericPrice ? 'text-xl' : 'text-sm'
+          }`}
+        >
           {formattedPrice}
         </span>
       </div>
